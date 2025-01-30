@@ -1,0 +1,19 @@
+body {font-family: sans-serif;}
+
+header img {float: left;
+            margin-right: 25px;}
+
+header h1 {color: orange;
+            font-style: italic;
+            text-shadow: 2px 2px 2px black;}
+
+main h2::first-letter {font-size: 35pt;}
+
+main h3 {font-size: 15pt;}
+
+#gurantee {font-size: 13pt;}
+
+a {color: orange;
+    font-weight: bold;}
+
+a:focus, a:hover {color: green;}
