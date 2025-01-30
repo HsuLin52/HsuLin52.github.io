@@ -8,6 +8,7 @@ header h1 {color: orange;
             text-shadow: 2px 2px 2px black;}
 
 main h2 {font-size: 16pt;}
+
 main h2::first-letter {font-size: 35pt;}
 
 main h3 {font-size: 15pt;}
