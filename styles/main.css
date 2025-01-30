@@ -17,3 +17,8 @@ a {color: orange;
     font-weight: bold;}
 
 a:focus, a:hover {color: green;}
+
+ul li {margin-bottom: 5px;}
+
+footer {font-size: smaller;
+        text-align: center;}
