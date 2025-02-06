@@ -1,0 +1,154 @@
+/* General Styles */
+body {font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    margin-top: 80px;
+    background-color: #7a5d7c;}
+
+/* Navigation Bar */
+header {display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #624a63;
+    padding: 15px 20px;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;}
+
+.logo {font-size: 28px;
+    display: inline;
+    margin: 0 15px;}
+
+.logo a {color: white;
+        text-decoration: none;
+        font-weight: bold;
+        transition: 0.3s;
+        float: left;}
+
+.logo a:hover {color: rgba(236, 188, 236, 0.6);}
+
+nav {flex: 1;
+    float: right;
+    padding-top: 5px;
+    padding-right: 10px;}
+
+nav ul {list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;}
+
+nav ul li {display: inline;
+        margin-right: 10px;
+        padding-right: 5px;}
+
+nav ul li a {color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+            padding-right:5px;
+            transition: 0.3s;}
+
+nav ul li a:hover {
+    color: rgba(236, 188, 236, 0.6);}
+
+/* Hero Section */ 
+
+.hero:after {
+    content: "";
+    background:white;
+    position: absolute;
+    opacity: .55;
+    top: 0;
+    left: 0;
+    height: 110%;
+    width: 100%;
+    transition: all .25s ease;}
+
+.hero {
+    margin-top: 70px; 
+    margin-bottom: 70px;
+    height: 95vh;
+    background: url('./images/Blocks-Mathematics-wallpaper.jpg') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    padding: 20px;}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #624a63;}
+
+.hero h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #624a63;}
+
+.overlay-text {
+    position: relative;
+    z-index: 1;}
+
+.algebra-image{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    padding-left: 100px;
+    padding-right: 100px;
+    border-radius: 50px;}
+
+.geometry-image {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: 50px auto;
+    flex-direction: row-reverse;
+    background-color: white;
+    padding-left: 100px;
+    padding-right: 100px;
+    border-radius: 50px;
+    border-radius: 50px;}
+
+.statistics-image {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    padding-left: 100px;
+    padding-right: 100px;
+    border-radius: 50px;}
+    
+button {
+    padding: 10px 20px;
+    background-color: #624a63;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 40px;}
+
+img {
+    width: 500px;
+    height: 400px;
+    object-fit: contain;}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+}

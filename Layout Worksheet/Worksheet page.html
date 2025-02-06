@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn math interactively with engaging lessons, quizzes, and progress tracking. Perfect for students and lifelong learners!">
+    <meta name="keywords" content="Maths learning, Interactive lessons, Maths Quizzes, Maths Worksheets, Maths Online education">
+    <meta name="author" content="Hsu Lin Latt Naing, Anastasia Krynytska, Tien Dung Pham">
+    <title>MathsLearn | Interactive Maths Platform</title>
+    <link rel="icon" href="maths.png" type="image/png">
+    <link rel="stylesheet" href="normalize.css" type="text/css">
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body class = "main">
+    <!-- Navigation Bar -->
+    <header>
+        <div class="logo"><a href="../Home Page/index.html">📚 MathsLearn</a></div>
+        <nav>
+            <ul>
+                <li><a href="../Home Page/index.html">Home</a></li>
+                <li><a href="../Lessons Page/interactive.html">Lessons</a></li>
+                <li><a href="#">Quizzes</a></li>
+                <li><a href="Worksheet page.html">Worksheets</a></li>
+                <li><a href="../Home Page/index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <form action="filtered.html" method="GET">
+        <section class="filters">
+            <label for="grade">Grade:</label>
+            <select id="grade" name="grade" required>
+                <option value="10">Grade 10</option>
+                <option value="11">Grade 11</option>
+                <option value="12">Grade 12</option>
+            </select>
+
+            <label for="subject">Subject:</label>
+            <select id="subject" name="subject" required>
+                <option value="Algebra">Algebra</option>
+                <option value="Geometry">Geometry</option>
+                <option value="Calculus">Calculus</option>
+            </select>
+
+            <label for="difficulty">Difficulty:</label>
+            <select id="difficulty" name="difficulty" required>
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+
+            <button type="submit" class ="submit">Show Worksheets</button>
+        </section>
+    </form>
+
+    
+    <section class="worksheets">
+        <!-- Grade 10 -->
+        <div class="worksheet-card grade-10 subject-Algebra difficulty-easy">
+            <h2>Algebra - Linear Equations</h2>
+            <p>Grade: 10 | Difficulty: Easy</p>
+            <a href="document/Grade10/Algebra_Grade10_easy.pdf" download="Algebra_Grade10_easy.pdf">
+                <button class="download">Download</button>
+            </a>
+            <!-- <button class="attempt">Attempt Online</button> -->
+        </div>
+        <div class="worksheet-card grade-10 subject-Algebra difficulty-medium">
+            <h2>Algebra - Functions</h2>
+            <p>Grade: 10 | Difficulty: Medium</p>
+            <a href="document/Grade10/Algebra_Grade10_medium.pdf" download="Algebra_Grade10_medium.pdf">
+                <button class="download">Download</button>
+            </a>
+            <!-- <button class="attempt">Attempt Online</button> -->
+        </div>
+        <div class="worksheet-card grade-10 subject-Algebra difficulty-hard">
+            <h2>Algebra - Polynomials</h2>
+            <p>Grade: 10 | Difficulty: Hard</p>
+            <a href="document/Grade10/Algebra_Grade10_hard.pdf" download="Algebra_Grade10_hard.pdf">
+                <button class="download">Download</button>
+            </a>
+            <!-- <button class="attempt">Attempt Online</button> -->
+        </div>
+
+        <div class="worksheet-card grade-10 subject-Geometry difficulty-easy">
+            <h2>Geometry - Basics</h2>
+            <p>Grade: 10 | Difficulty: Easy</p>
+            <a href="document/Grade10/Geometry_Grade10_easy.pdf" download="Geometry_Grade10_easy.pdf">
+                <button class="download">Download</button>
+            </a>
+            <!-- <button class="attempt">Attempt Online</button> -->
+        </div>
+        <div class="worksheet-card grade-10 subject-Geometry difficulty-medium">
+            <h2>Geometry - Angles & Lines</h2>
+            <p>Grade: 10 | Difficulty: Medium</p>
+            <a href="document/Grade10/Geometry_Grade10_medium.pdf" download="Geometry_Grade10_medium.pdf">
+                <button class="download">Download</button>
+            </a>
+            <!-- <button class="attempt">Attempt Online</button> -->
+        </div>
+        <div class="worksheet-card grade-10 subject-Geometry difficulty-hard">
+            <h2>Geometry - 3D Shapes</h2>
+            <p>Grade: 10 | Difficulty: Hard</p>
+            <a href="document/Grade10/Geometry_Grade10_hard.pdf" download="Geometry_Grade10_hard.pdf">
+                <button class="download">Download</button>
+            </a>
+            <!-- <button class="attempt">Attempt Online</button> -->
+        </div>
+
+        <div class="worksheet-card grade-10 subject-Calculus difficulty-easy">
+            <h2>Calculus - Introduction</h2>
+            <p>Grade: 10 | Difficulty: Easy</p>
+            <a href="document/Grade10/Calculus_Grade10_easy.pdf" download="Calculus_Grade10_easy.pdf">
+                <button class="download">Download</button>
+            </a>
+            <!-- <button class="attempt">Attempt Online</button> -->
+        </div>
+        <div class="worksheet-card grade-10 subject-Calculus difficulty-medium">
+            <h2>Calculus - Derivatives</h2>
+            <p>Grade: 10 | Difficulty: Medium</p>
+            <a href="document/Grade10/Calculus_10_medium.pdf" download="Calculus_10_medium.pdf">
+                <button class="download">Download</button>
+            </a>
+            <!-- <button class="attempt">Attempt Online</button> -->
+        </div>
+        <div class="worksheet-card grade-10 subject-Calculus difficulty-hard">
+            <h2>Calculus - Integrals</h2>
+            <p>Grade: 10 | Difficulty: Hard</p>
+            <a href="document/Grade10/Calculus_Grade10_hard.pdf" download="Calculus_Grade10_hard.pdf">
+                <button class="download">Download</button>
+            </a>
+            <!-- <button class="attempt">Attempt Online</button> -->
+        </div>
+
+        <!-- Grade 11 -->
+        <div class="worksheet-card grade-11 subject-Algebra difficulty-easy">
+            <h2>Algebra - Quadratic Equations</h2>
+            <p>Grade: 11 | Difficulty: Easy</p>
+            <a href="document/Grade11/Algebra_Grade11_easy.pdf" download="Algebra_Grade11_easy.pdf">
+                <button class="download">Download</button>
+            </a>
+            <!-- <button class="attempt">Attempt Online</button> -->
+        </div>
+        <div class="worksheet-card grade-11 subject-Algebra difficulty-medium">
+            <h2>Algebra - Matrices</h2>
+            <p>Grade: 11 | Difficulty: Medium</p>
+            <a href="document/Grade11/Algebra_Grade11_medium.pdf" download="Algebra_Grade11_medium.pdf">
+                <button class="download">Download</button>
+            </a>
+            <!-- <button class="attempt">Attempt Online</button> -->
+        </div>
+        <div class="worksheet-card grade-11 subject-Algebra difficulty-hard">
+            <h2>Algebra - Complex Numbers</h2>
+            <p>Grade: 11 | Difficulty: Hard</p>
+            <a href="document/Grade11/Algebra_Grade11_hard.pdf" download="Algebra_Grade11_hard.pdf">
+                <button class="download">Download</button>
+            </a>
+            <!-- <button class="attempt">Attempt Online</button> -->
+        </div>
+
+        <div class="worksheet-card grade-11 subject-Geometry difficulty-easy">
+            <h2>Geometry - Triangle Properties</h2>
+            <p>Grade: 11 | Difficulty: Easy</p>
+            <a href="document/Grade11/Geometry_Grade11_easy.pdf" download="Geometry_Grade11_easy.pdf">
+                <button class="download">Download</button>
+            </a>
+            <!-- <button class="attempt">Attempt Online</button> -->
+        </div>
+        <div class="worksheet-card grade-11 subject-Geometry difficulty-medium">
+            <h2>Geometry - Circles</h2>
+            <p>Grade: 11 | Difficulty: Medium</p>
+            <a href="document/Grade11/Geometry_Grade11_medium.pdf" download="Geometry_Grade11_medium.pdf">
+                <button class="download">Download</button>
+            </a>
+            <!-- <button class="attempt">Attempt Online</button> -->
+        </div>
+        <div class="worksheet-card grade-11 subject-Geometry difficulty-hard">
+            <h2>Geometry - 3D Transformations</h2>
+            <p>Grade: 11 | Difficulty: Hard</p>
+            <a href="document/Grade11/Geometry_Grade11_hard.pdf" download="Geometry_Grade11_hard.pdf">
+                <button class="download">Download</button>
+            </a>
+            <!-- <button class="attempt">Attempt Online</button> -->
+        </div>
+
+        <div class="worksheet-card grade-11 subject-Calculus difficulty-easy">
+            <h2>Calculus - Limits</h2>
+            <p>Grade: 11 | Difficulty: Easy</p>
+            <a href="document/Grade11/Calculus_Grade11_easy.pdf" download="Calculus_Grade11_easy.pdf">
+                <button class="download">Download</button>
+            </a>
+            <!-- <button class="attempt">Attempt Online</button> -->
+        </div>
+        <div class="worksheet-card grade-11 subject-Calculus difficulty-medium">
+            <h2>Calculus - Differentiation</h2>
+            <p>Grade: 11 | Difficulty: Medium</p>
+            <a href="document/Grade11/Calculus_Grade11_medium.pdf" download="Calculus_Grade11_medium.pdf">
+                <button class="download">Download</button>
+            </a>
+            <!-- <button class="attempt">Attempt Online</button> -->
+        </div>
+        <div class="worksheet-card grade-11 subject-Calculus difficulty-hard">
+            <h2>Calculus - Integration Techniques</h2>
+            <p>Grade: 11 | Difficulty: Hard</p>
+            <a href="document/Grade11/Calculus_Grade11_hard.pdf" download="Calculus_Grade11_hard.pdf">
+                <button class="download">Download</button>
+            </a>
+            <!-- <button class="attempt">Attempt Online</button> -->
+        </div>
+
+        <!-- Grade 12 -->
+        <div class="worksheet-card grade-12 subject-Algebra difficulty-easy">
+            <h2>Algebra - Linear Algebra</h2>
+            <p>Grade: 12 | Difficulty: Easy</p>
+            <a href="document/Grade12/Algebra_Grade12_easy.pdf" download="Algebra_Grade12_easy.pdf">
+                <button class="download">Download</button>
+            </a>
+            <!-- <button class="attempt">Attempt Online</button> -->
+        </div>
+        <div class="worksheet-card grade-12 subject-Algebra difficulty-medium">
+            <h2>Algebra - Determinants</h2>
+            <p>Grade: 12 | Difficulty: Medium</p>
+            <a href="document/Grade12/Algebra_Grade12_medium.pdf" download="Algebra_Grade12_medium.pdf">
+                <button class="download">Download</button>
+            </a>
+            <!-- <button class="attempt">Attempt Online</button> -->
+        </div>
+        <div class="worksheet-card grade-12 subject-Algebra difficulty-hard">
+            <h2>Algebra - Eigenvalues</h2>
+            <p>Grade: 12 | Difficulty: Hard</p>
+            <a href="document/Grade12/Algebra_Grade12_hard.pdf" download="Algebra_Grade12_hard.pdf">
+                <button class="download">Download</button>
+            </a>
+            <!-- <button class="attempt">Attempt Online</button> -->
+        </div>
+
+        <div class="worksheet-card grade-12 subject-Geometry difficulty-easy">
+            <h2>Geometry - Vectors</h2>
+            <p>Grade: 12 | Difficulty: Easy</p>
+            <a href="document/Grade12/Geometry_Grade12_easy.pdf" download="Geometry_Grade12_easy.pdf">
+                <button class="download">Download</button>
+            </a>
+            <!-- <button class="attempt">Attempt Online</button> -->
+        </div>
+        <div class="worksheet-card grade-12 subject-Geometry difficulty-medium">
+            <h2>Geometry - Coordinate Geometry</h2>
+            <p>Grade: 12 | Difficulty: Medium</p>
+            <a href="document/Grade12/Geometry_Grade12_medium.pdf" download="Geometry_Grade12_medium.pdf">
+                <button class="download">Download</button>
+            </a>
+            <!-- <button class="attempt">Attempt Online</button> -->
+        </div>
+        <div class="worksheet-card grade-12 subject-Geometry difficulty-hard">
+            <h2>Geometry - Conic Sections</h2>
+            <p>Grade: 12 | Difficulty: Hard</p>
+            <a href="document/Grade12/Geometry_Grade12_hard.pdf" download="Geometry_Grade12_hard.pdf">
+                <button class="download">Download</button>
+            </a>
+            <!-- <button class="attempt">Attempt Online</button> -->
+        </div>
+
+        <div class="worksheet-card grade-12 subject-Calculus difficulty-easy">
+            <h2>Calculus - Differential Equations</h2>
+            <p>Grade: 12 | Difficulty: Easy</p>
+            <a href="document/Grade12/Calculus_Grade12_easy.pdf" download="Calculus_Grade12_easy.pdf">
+                <button class="download">Download</button>
+            </a>
+            <!-- <button class="attempt">Attempt Online</button> -->
+        </div>
+        <div class="worksheet-card grade-12 subject-Calculus difficulty-medium">
+            <h2>Calculus - Integral Calculus</h2>
+            <p>Grade: 12 | Difficulty: Medium</p>
+            <a href="document/Grade12/Calculus_Grade12_medium.pdf" download="Calculus_Grade12_medium.pdf">
+                <button class="download">Download</button>
+            </a>
+            <!-- <button class="attempt">Attempt Online</button> -->
+        </div>
+        <div class="worksheet-card grade-12 subject-Calculus difficulty-hard">
+            <h2>Calculus - Multivariable Calculus</h2>
+            <p>Grade: 12 | Difficulty: Hard</p>
+            <a href="document/Grade12/Calculus_Grade12_hard.pdf" download="Calculus_Grade12_hard.pdf">
+                <button class="download">Download</button>
+            </a>
+            <!-- <button class="attempt">Attempt Online</button> -->
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 MathsLearn. All Rights Reserved to HAT.</p>
+    </footer>
+</body>
+</html>
