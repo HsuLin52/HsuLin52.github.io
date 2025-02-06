@@ -1,0 +1,187 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #7a5d7c;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #634165;
+    padding: 15px 20px;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+.Goback {
+    display: block;
+    text-align: center; 
+    margin: 20px auto; 
+    font-size: 18px;
+    background-color: #788ee7; 
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    width: 150px; 
+    text-align: center;
+    margin-top: 15px;
+}
+
+
+.Goback:hover {
+    background-color: #0556d7; 
+}
+
+
+nav ul {list-style-type: none;
+    padding: 0;}
+
+nav ul li {display: inline;
+        margin-right: 20px;}
+
+nav ul li a {color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+            padding-right:5px;
+            transition: 0.3s;}
+
+nav ul li a:hover {
+    color: rgba(236, 188, 236, 0.6);}
+
+
+/* Filters Section */
+.filters {
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 15px;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    max-width: 700px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 150px;
+}
+
+.filters label {
+    font-weight: bold;
+    
+    margin-top: 12px;
+}
+
+.filters select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    background: #fff;
+    cursor: pointer;
+    transition: border 0.3s;
+}
+
+.filters select:focus {
+    border-color: #2a9df4;
+    outline: none;
+}
+.filter section{
+    margin-top: 150px;
+}
+
+/* Worksheet Cards */
+.worksheets {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.worksheet-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 280px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.worksheet-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.worksheet-card h2 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.worksheet-card p {
+    color: #555;
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+/* Buttons */
+button {
+    padding: 10px;
+    margin: 8px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+.download {
+    background-color: #4caf50;
+    color: white;
+}
+
+.download:hover {
+    background-color: #388e3c;
+}
+
+/* .attempt {
+    background-color: #ff9800;
+    color: white;
+}
+
+.attempt:hover {
+    background-color: #e65100;
+} */
+.submit{
+    background-color: #2a9df4;
+    color: white;
+    
+}
+.filter footer {
+    background: #333;
+    color: white;
+    padding: 20px;
+    margin-top: 210px ; 
+}
+
+footer {
+    background: #333;
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
