@@ -1,9 +1,5 @@
 /* General Styles */
-<<<<<<< HEAD
-body {font-family: 'Poppins', sans-serif;
-=======
 body {font-family: 'GunPlayFont', sans-serif;
->>>>>>> 6be116c (comment)
     margin: 0;
     padding: 0;
     text-align: center;
@@ -11,8 +7,6 @@ body {font-family: 'GunPlayFont', sans-serif;
     color: #333;
     margin-top: 80px;}
 
-<<<<<<< HEAD
-=======
 /* Creating a new font */
 @font-face {
     font-family: 'GunPlayFont';
@@ -21,7 +15,6 @@ body {font-family: 'GunPlayFont', sans-serif;
     font-style: normal;
 }
 
->>>>>>> 6be116c (comment)
 /* General Button Styling */
 button {font-size: 18px;
     transition: all 0.3s ease-in-out;}
@@ -65,11 +58,7 @@ nav ul {list-style-type: none;
 
 nav ul li {display: inline;
         margin-right: 10px;
-<<<<<<< HEAD
-        padding-right: 5px;}
-=======
         padding-right: 10px;}
->>>>>>> 6be116c (comment)
 
 nav ul li a {color: white;
             text-decoration: none;
@@ -81,8 +70,6 @@ nav ul li a {color: white;
 nav ul li a:hover {
     color: rgba(236, 188, 236, 0.6);}
 
-<<<<<<< HEAD
-=======
 .nav-links.active {
     display: flex;
     flex-direction: column;
@@ -103,7 +90,6 @@ nav ul li a:hover {
     }
 }
 
->>>>>>> 6be116c (comment)
 /* Welcome Section */
 .welcome {background-color: #7a5d7c;
         color: white;
@@ -164,31 +150,28 @@ nav ul li a:hover {
 .feature i {font-size: 40px;
             color: #6a0572;}
 
-<<<<<<< HEAD
-=======
 @media screen and (max-width: 768px) {
     .feature {
         flex: 1 1 100%;
     }
 }
 
->>>>>>> 6be116c (comment)
 /* Contact Section */
 .contact-section {background: #7a5d7c;
-                padding: 50px 0;
+                padding: 10px 0 30px;
                 color: white;
                 margin-bottom: 0;}
 
 .contact-section input {width: 50%;
-                        padding: 10px;
-                        margin: 10px 0;
+                        padding: 15px;
+                        margin: 15px 5px;
                         border-radius: 5px;
                         border: 1px solid #ccc;}
 
 .contact-section textarea {width: 70%;
                         height: 60px;
                         padding: 3px;
-                        margin: 10px 0;
+                        margin: 10px 5px;
                         border-radius: 5px;
                         border: 1px solid #ccc;
                         resize: vertical;}
@@ -206,7 +189,7 @@ nav ul li a:hover {
     display: flex;
     align-items: center;
     gap: 10px;
-    margin-left: 40px;
+    margin-left: 60px;
     margin-bottom: 10px;
 }
 

@@ -1,17 +1,11 @@
 
 body {
-<<<<<<< HEAD
-    font-family: Arial, sans-serif;
-=======
     font-family: 'GunPlayFont', sans-serif;
->>>>>>> 6be116c (comment)
     margin: 0;
     padding: 0;
     background-color: #7a5d7c;
 }
 
-<<<<<<< HEAD
-=======
 /* Creating a new font */
 @font-face {
     font-family: 'GunPlayFont';
@@ -19,8 +13,6 @@ body {
     font-weight: normal;
     font-style: normal;
 }
-
->>>>>>> 6be116c (comment)
 
 /* Navigation Bar */
 header {display: flex;
@@ -37,8 +29,7 @@ header {display: flex;
 
 .logo {font-size: 28px;
     display: inline;
-    margin: 0 15px;
-    text-align: center;}
+    margin: 0 15px;}
 
 .logo a {color: white;
         text-decoration: none;
@@ -62,11 +53,7 @@ nav ul {list-style-type: none;
 
 nav ul li {display: inline;
         margin-right: 10px;
-<<<<<<< HEAD
-        padding-right: 5px;}
-=======
         padding-right: 10px;}
->>>>>>> 6be116c (comment)
 
 nav ul li a {color: white;
             text-decoration: none;
