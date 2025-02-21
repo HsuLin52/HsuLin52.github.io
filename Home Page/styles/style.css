@@ -1,11 +1,16 @@
 /* General Styles */
-body {font-family: 'GunPlayFont', sans-serif;
+
+* {
     margin: 0;
     padding: 0;
-    text-align: center;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body {font-family: 'GunPlayFont', sans-serif;
     background: #fdfdfd;
     color: #333;
-    margin-top: 80px;}
+    min-height: 100vh;
+    text-align: center;}
 
 /* Creating a new font */
 @font-face {
@@ -20,73 +25,122 @@ button {font-size: 18px;
     transition: all 0.3s ease-in-out;}
 
 /* Navigation Bar */
-header {display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #624a63;
-    padding: 15px 20px;
-    color: white;
-    position: fixed;
+header {position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    z-index: 1000;}
-
-.logo {font-size: 28px;
-    display: inline;
-    margin: 0 15px;}
-
-.logo a {color: white;
-        text-decoration: none;
-        font-weight: bold;
-        transition: 0.3s;
-        float: left;}
-
-.logo a:hover {color: rgba(236, 188, 236, 0.6);}
-
-nav {flex: 1;
-    float: right;
-    padding-top: 5px;
-    padding-right: 10px;}
-
-nav ul {list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: flex-end;
-    gap: 10px;}
-
-nav ul li {display: inline;
-        margin-right: 10px;
-        padding-right: 10px;}
-
-nav ul li a {color: white;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 16px;
-            padding-right:5px;
-            transition: 0.3s;}
-
-nav ul li a:hover {
-    color: rgba(236, 188, 236, 0.6);}
-
-.nav-links.active {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 60px;
     right: 0;
     background: #624a63;
-    width: 100%;
-    padding: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    padding: 0px 3% 0px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
 }
 
-@media screen and (max-width: 768px) {
-    .nav-links {
+.logo {font-size: 30px;
+    color: white;
+}
+
+.logo:hover {
+    scale: 0.95;
+    transition: 0.3s;
+}
+
+nav ul {list-style: none;}
+
+nav ul li {position: relative;
+        float: left;}
+
+nav ul li a {
+    font-size: 18px;
+    color: white;
+    padding: 20px;
+    display: block;
+}
+
+nav ul li a:hover {
+    color: white;
+    background: #3e2f3e;
+}
+
+nav ul li ul {
+    position: absolute;
+    left: 0;
+    width: 165px;
+    background: #674e68b9;
+    display: none;
+}
+
+nav ul li ul li {
+    width: 100%;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+nav ul li ul li ul {
+    left: 165px;
+    top: 0;
+}
+
+nav ul li:focus-within > ul,
+nav ul li:hover > ul {
+    display: initial;
+}
+
+#menu-bar {
+    display: none;
+}
+
+header label {
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width:898px) {
+    header {
+        padding: 20px;
+    }
+
+    header label {
+        display: initial;
+    }
+
+    nav {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #624a63;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
         display: none;
     }
-    .menu-bar {
-        display: block;
+
+    .nav-links {
+        text-align: left;
+    }
+
+    nav ul li {
+        width: 100%;
+    }
+
+    nav ul li ul {
+        position: relative;
+        width: 100%;
+    }
+
+    nav ul li ul li {
+        background: #674e68b9;
+    }
+
+    nav ul li ul li ul {
+        width: 100%;
+        left: 0;
+    }
+
+    #menu-bar:checked ~ nav {
+        display: initial;
     }
 }
 
@@ -138,12 +192,16 @@ nav ul li a:hover {
             gap: 20px;
             margin: 40px 0;}
 
-.feature {width: 29%;
-            padding: 20px;
-            background: white;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
-            transition: transform 0.3s;}
+.feature {
+    width: 29%;
+    padding: 50px;
+    font-size: 20px;
+    align-items: center;
+    background: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
 
 .feature:hover {transform: scale(0.95);}
 
@@ -173,8 +231,12 @@ nav ul li a:hover {
                         padding: 3px;
                         margin: 10px 5px;
                         border-radius: 5px;
-                        border: 1px solid #ccc;
-                        resize: vertical;}
+                        border: 1px solid #ccc;}
+
+.contact-section h2 {
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
 
 .contact-section button {
     background: #d0becbd2;
@@ -209,4 +271,5 @@ footer {
     color: white;
     padding: 20px;
     margin-top: 20px;
+    text-align: center;
 }
