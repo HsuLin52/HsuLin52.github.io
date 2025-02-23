@@ -1,11 +1,11 @@
 /* General Styles */
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
 }
+
 body {font-family: 'GunPlayFont', sans-serif;
     background: #fdfdfd;
     color: #333;
@@ -145,20 +145,25 @@ header label {
 }
 
 /* Welcome Section */
-.welcome {background-color: #7a5d7c;
-        color: white;
-        text-align: center;
-        padding: 100px 20px;
-        height: 95vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 20px;}
+
+.welcome {
+    background: linear-gradient(270deg, #7a5d7c, #624a63, #b4a1b5);
+    background-size: 600% 600%;
+    animation: gradientAnimation 10s ease infinite;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 .welcome-content {background: rgba(0, 0, 0, 0.6);
                 padding: 40px;
                 border-radius: 10px;
-                animation: fadeSlideIn 1.5s ease-in-out}
+                animation: fadeSlideIn 1.5s ease-in-out;
+                box-shadow: 5px 4px 5px rgba(0, 0, 0, 0.1);}
 
 .welcome h1 {font-size: 45px;}
 
@@ -184,6 +189,13 @@ header label {
         transform: translateY(-30px);}
     to {opacity: 1;
         transform: translateY(0);}
+}
+
+/* Gradient Animation for the welcome page */
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
 
 /* Features Section */
