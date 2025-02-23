@@ -47,24 +47,24 @@ header {position: fixed;
     transition: 0.3s;
 }
 
-nav ul {list-style: none;}
+.navigation {list-style: none;}
 
-nav ul li {position: relative;
+.navigation li {position: relative;
         float: left;}
 
-nav ul li a {
+.nav-links {
     font-size: 18px;
     color: white;
     padding: 20px;
     display: block;
 }
 
-nav ul li a:hover {
+.nav-links:hover {
     color: white;
     background: #3e2f3e;
 }
 
-nav ul li ul {
+.user-profile {
     position: absolute;
     left: 0;
     width: 165px;
@@ -72,19 +72,20 @@ nav ul li ul {
     display: none;
 }
 
-nav ul li ul li {
+.user-profile li {
     width: 100%;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
     text-align: left;
 }
 
-nav ul li ul li ul {
+/* For further lists within the navigation bar */
+.user-profile li ul {
     left: 165px;
     top: 0;
 }
 
-nav ul li:focus-within > ul,
-nav ul li:hover > ul {
+.navigation li:focus-within > ul,
+.navigation li:hover > ul {
     display: initial;
 }
 
@@ -96,6 +97,16 @@ header label {
     color: white;
     cursor: pointer;
     display: none;
+}
+
+@media (max-width:645px) {
+    .feature h2 {
+        font-size: 16px;
+    }
+
+    .feature p {
+        font-size: 14px;
+    }
 }
 
 @media (max-width:898px) {
@@ -118,23 +129,24 @@ header label {
     }
 
     .nav-links {
-        text-align: left;
+        text-align: right;
     }
 
-    nav ul li {
+    .navigation li {
         width: 100%;
     }
 
-    nav ul li ul {
+    .user-profile {
         position: relative;
         width: 100%;
     }
 
-    nav ul li ul li {
+    .user-profile li {
         background: #674e68b9;
     }
 
-    nav ul li ul li ul {
+    /* For further lists within the navigation bar */
+    .user-profile li ul {
         width: 100%;
         left: 0;
     }
@@ -207,7 +219,7 @@ header label {
 .feature {
     width: 29%;
     padding: 50px;
-    font-size: 20px;
+    font-size: 18px;
     align-items: center;
     background: white;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
@@ -216,9 +228,6 @@ header label {
 }
 
 .feature:hover {transform: scale(0.95);}
-
-.feature i {font-size: 40px;
-            color: #6a0572;}
 
 @media screen and (max-width: 768px) {
     .feature {
@@ -259,6 +268,15 @@ header label {
     cursor: pointer;
 }
 
+.contact-section button:hover {
+    background: #cdb2c6;
+    transform: scale(1.05);
+}
+
+.contact-section button:active {
+    transform: scale(0.95);
+}
+
 .contact-form-row {
     display: flex;
     align-items: center;
@@ -272,9 +290,13 @@ header label {
     text-align: right;
 }
 
-.contact-section button:hover {
-    background: #cdb2c6;
-    transform: scale(0.95);
+/* Animation for the contact form */
+.contact-form-row input:focus,
+.contact-form-row textarea:focus {
+    outline: none;
+    border: 3px solid #664a67;
+    box-shadow: 0 0 10px #927b92;
+    transition: border 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 /* Footer */
