@@ -1,9 +1,25 @@
-
-body {
-    font-family: 'GunPlayFont', sans-serif;
+/* General Styles */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html, body {
+    font-family: 'GunPlayFont', sans-serif;
+    /* width: 90vw; */
+    /* max-width: 1024px; */
     background-color: #7a5d7c;
+    max-width: 100%;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+main {
+    flex: 1;
 }
 
 /* Creating a new font */
@@ -14,56 +30,137 @@ body {
     font-style: normal;
 }
 
+
 /* Navigation Bar */
-header {display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #624a63;
-    padding: 15px 20px;
-    color: white;
-    position: fixed;
+header {position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    z-index: 1000;}
-
-.logo {font-size: 28px;
-    display: inline;
-    margin: 0 15px;}
-
-.logo a {color: white;
-        text-decoration: none;
-        font-weight: bold;
-        transition: 0.3s;
-        float: left;}
-
-.logo a:hover {color: rgba(236, 188, 236, 0.6);}
-
-nav {flex: 1;
-    float: right;
-    padding-top: 5px;
-    padding-right: 10px;}
-
-nav ul {list-style-type: none;
-    padding: 0;
-    margin: 0;
+    right: 0;
+    background: #624a63;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    padding: 0px 3% 0px 20px;
     display: flex;
-    justify-content: flex-end;
-    gap: 10px;}
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
 
-nav ul li {display: inline;
-        margin-right: 10px;
-        padding-right: 10px;}
+.logo {font-size: 30px;
+    color: white;
+}
 
-nav ul li a {color: white;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 16px;
-            padding-right:5px;
-            transition: 0.3s;}
+.logo:hover {
+    scale: 0.95;
+    transition: 0.3s;
+}
 
-nav ul li a:hover {
-    color: rgba(236, 188, 236, 0.6);}
+.navigation {
+    list-style: none;
+}
+
+.navigation li {
+    position: relative;
+    float: left;
+}
+
+.nav-links {
+    font-size: 18px;
+    color: white;
+    padding: 20px;
+    display: block;
+}
+
+.nav-links:hover {
+    color: white;
+    background: #3e2f3e;
+}
+
+.user-profile {
+    position: absolute;
+    left: 0;
+    width: 165px;
+    background: #674e68b9;
+    display: none;
+}
+
+.user-profile li {
+    width: 100%;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    text-align: left;
+    list-style: none;
+}
+
+/* For further lists within the navigation bar */
+.user-profile li ul {
+    left: 165px;
+    top: 0;
+}
+
+.navigation li:focus-within > .user-profile,
+.navigation li:hover > .user-profile {
+    display: initial;
+}
+
+#menu-bar {
+    display: none;
+}
+
+header label {
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width:898px) {
+    header {
+        padding: 20px;
+    }
+
+    header label {
+        display: initial;
+    }
+
+    nav {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #624a63;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+        display: none;
+    }
+
+    .nav-links {
+        text-align: right;
+    }
+
+    .navigation li {
+        width: 100%;
+    }
+
+    .user-profile {
+        position: relative;
+        width: 100%;
+    }
+
+    .user-profile li {
+        background: #674e68b9;
+    }
+
+    /* For further lists within the navigation bar */
+    .user-profile li ul {
+        width: 100%;
+        left: 0;
+    }
+
+    #menu-bar:checked ~ nav {
+        display: initial;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+}
 
 .Goback {
     display: block;
@@ -200,6 +297,25 @@ button:hover {
     color: white;
     
 }
+
+@media only screen and (max-width: 767px) {
+    .filters {
+        padding-top: 30px;
+        flex-direction: column;
+        max-width: 500px;
+        margin-top: 90px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .worksheet-card {
+        width: 90%;
+        margin: auto;
+    }
+}
+
+
+
 .filter footer {
     background: #333;
     color: white;
@@ -212,6 +328,6 @@ footer {
     background: #333;
     color: white;
     padding: 20px;
-    margin-top: 20px;
+    margin-top: auto;
     text-align: center;
 }
