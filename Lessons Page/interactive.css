@@ -58,7 +58,7 @@ nav ul li a:hover {
     color: rgba(236, 188, 236, 0.6);}
 
 /* Hero Section */ 
-
+/* This is approved */
 .hero:after {
     content: "";
     background:white;
