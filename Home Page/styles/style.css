@@ -178,28 +178,36 @@ header label {
     justify-content: center;
 }
 
-.welcome-content {background: rgba(0, 0, 0, 0.6);
-                padding: 40px;
-                border-radius: 10px;
-                animation: fadeSlideIn 1.5s ease-in-out;
-                box-shadow: 5px 4px 5px rgba(0, 0, 0, 0.1);}
+.welcome-content {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 40px;
+    border-radius: 10px;
+    animation: fadeSlideIn 1.5s ease-in-out;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
 
-.welcome h1 {font-size: 45px;}
+.welcome h1 {
+    font-size: 45px;
+}
 
-.welcome p {font-size: 20px;
-            line-height: 1.6;
-            margin-bottom: 15px;}
+.welcome p {
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
 
-.welcome button {background: #b4a1b5;
-                color: white;
-                padding: 12px 24px;
-                border: none;
-                font-size: 1rem;
-                cursor: pointer;
-                margin-top: 15px;
-                border-radius: 5px;}
+.welcome button {
+    background: #b4a1b5;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 15px;
+    border-radius: 5px;
+}
 
-.welcome button:hover {background: #d6b2d8;
+.welcome button:hover {background: #7a5d7c;
                         transform: scale(0.95);}
 
 /* Welcome Section Animation */
