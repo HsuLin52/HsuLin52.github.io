@@ -182,6 +182,10 @@ header label {
     color: white;
 }
 
+.progress-section h2 {
+    margin-bottom: 10px;
+}
+
 .progress-item {
     margin-bottom: 20px;
 }

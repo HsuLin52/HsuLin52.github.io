@@ -6,7 +6,7 @@
     <meta name="description" content="Learn math interactively with engaging lessons, quizzes, and progress tracking. Perfect for students and lifelong learners!">
     <meta name="keywords" content="Maths learning, Interactive lessons, Maths Quizzes, Maths Worksheets, Maths Online education">
     <meta name="author" content="Hsu Lin Latt Naing, Anastasia Krynytska, Tien Dung Pham">
-    <title>MathsLearn | Interactive Maths Platform</title>
+    <title>MathsLearn | User Dashboard</title>
     <link rel="icon" href="../images/maths.png" type="image/png">
     <link rel="stylesheet" href="../styles/account.css" type="text/css">
     <link rel="stylesheet" href="../styles/normalize.css" type="text/css">
@@ -37,14 +37,53 @@
         </nav>
     </header>
 
-    <!-- User Account Section -->
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar">
+        <h2>User Dashboard</h2>
+        <ul>
+            <li><a href="account.html"><i class="fa-solid fa-user"></i> Profile</a></li>
+            <li><a href="progress.html"><i class="fa-solid fa-chart-line"></i> Progress</a></li>
+            <li><a href="#"><i class="fa-solid fa-cog"></i> Settings</a></li>
+            <li><a href="#"><i class="fa-solid fa-sign-out-alt"></i> Logout</a></li>
+        </ul>
+    </aside>
+
+    <!-- Main User Account Content -->
     <main class="account-container">
         <section class="profile">
             <img src="../images/profile.jpg" alt="User Profile picture" class="profile-pic">
             <h2>Mark Lee</h2>
             <p>Email: marklee@gmail.com</p>
+
+            <!-- Profile Completion Bar -->
+            <div class="profile-completion">
+                <p>Profile Completion: 70%</p>
+                <div class="progress-bar-container">
+                    <div class="progress-bar" style="width: 70%;">70%</div>
+                </div>
+            </div>
             <button class="edit-profile-button"><i class="fa-solid fa-pen"></i> Edit Profile</button>
             <a href="progress.html"> <button class="view-progress-button"><i class="fa-solid fa-chart-line"></i> View Progress</button> </a>
+        </section>
+
+        <!-- Achievements Section -->
+        <section class="achievements">
+            <h3>Achievements</h3>
+            <div class="badge-container">
+                <div class="badge"><i class="fa-solid fa-award"></i> Problem Solver</div>
+                <div class="badge"><i class="fa-solid fa-star"></i> Math Champion</div>
+                <div class="badge"><i class="fa-solid fa-trophy"></i> Quiz Master</div>
+            </div>
+        </section>
+
+        <!-- Recent Activity -->
+        <section class="recent-activity">
+            <h3>Recent Activity</h3>
+            <ul>
+                <li><i class="fa-solid fa-check"></i> Completed **Algebra Quiz** - 85%</li>
+                <li><i class="fa-solid fa-file"></i> Downloaded **Geometry Worksheet**</li>
+                <li><i class="fa-solid fa-award"></i> Earned **"Problem Solver" Badge**</li>
+            </ul>
         </section>
     </main>
 
