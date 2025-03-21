@@ -173,15 +173,14 @@ header label {
     top: 0;
     height: 100vh;
     width: 200px;
-    background: #5b3d5e;
+    background: #624a63;
     color: white;
     padding-top: 15px;
     padding-bottom: 50px;
-    background: linear-gradient(135deg, #5b3d5e, #3e2f3e);
     display: flex;
     flex-direction: column;
     align-items: center;
-    transition: width 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, width 0.3s ease-in-out;
 }
 
 .sidebar h2 {
@@ -222,11 +221,79 @@ header label {
 
 .sidebar ul li a:hover {
     background: rgba(255, 255, 255, 0.2);
-    transform: scale(1.05);
+    transform: scale(1.01);
 }
 
 .sidebar ul li a:hover {
     background: #3e2f3e;
+}
+
+@media (max-width: 750px) {
+
+    header {
+        z-index: 1000;
+    }
+
+    footer {
+        z-index: 1000;
+    }
+
+    .sidebar {
+        width: 70px;
+        align-items: flex-start;
+        padding-left: 5px;
+        overflow: hidden;
+        z-index: 900;
+    }
+
+    .sidebar h2 {
+        display: none;
+    }
+
+    .sidebar ul {
+        margin-top: 60px;
+    }
+
+    .sidebar ul li a {
+        font-size: 0;
+        justify-content: center;
+    }
+
+    .sidebar ul li a i {
+        font-size: 20px;
+        margin-right: 0;
+    }
+    .sidebar:hover {
+        width: 220px;
+    }
+
+    .sidebar:hover ul li a {
+        font-size: 16px;
+        justify-content: flex-start;
+    }
+
+    .sidebar:hover ul li a i {
+        margin-right: 10px;
+    }
+
+    .account-container {
+        margin-left: 30px;
+        font-size: 12px;
+        z-index: 950s;
+    }
+
+    .profile {
+        padding: 5px;
+    }
+
+    .profile-pic {
+        width: 50px;
+        height: auto;
+    }
+
+    .recent-activity {
+        margin-bottom: 20px;
+    }
 }
 
 /* User Account Layout */
@@ -260,7 +327,7 @@ header label {
     width: 150px;
     height: auto;
     border-radius: 50%;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 /* Edit Profile Button */
@@ -272,7 +339,7 @@ header label {
     cursor: pointer;
     border-radius: 5px;
     font-weight: bold;
-    margin-top: 10px;
+    margin-top: 5px;
     cursor: pointer;
 }
 
@@ -284,7 +351,7 @@ header label {
 
 /* Profile Completion Bar */
 .profile-completion {
-    margin: 15px 0;
+    margin: 10px 0;
 }
 
 .progress-bar-container {
@@ -310,7 +377,7 @@ header label {
 .recent-activity {
     background: white;
     color: #624a63;
-    padding: 20px;
+    padding: 10px;
     margin-top: 15px;
     width: 350px;
     border-radius: 10px;
@@ -325,6 +392,7 @@ header label {
 .recent-activity ul {
     list-style: none;
     padding: 0;
+    margin-left: 10px;
 }
 
 .recent-activity ul li {
