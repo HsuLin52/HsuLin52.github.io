@@ -161,6 +161,141 @@ header label {
     footer {
         font-size: 14px;
     }
+
+    #pf {
+        display: none;
+    }
+}
+
+/* Sidebar Navigation */
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 200px;
+    background: #624a63;
+    color: white;
+    padding-top: 15px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease-in-out, width 0.3s ease-in-out;
+    z-index: 900;
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    width: 100%;
+    padding: 0;
+}
+
+.sidebar a[href="account.html"] {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.sidebar ul li {
+    width: 100%;
+    margin: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.sidebar ul li a {
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.sidebar ul li a i {
+    margin-right: 10px;
+}
+
+.sidebar ul li a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.01);
+}
+
+.sidebar ul li a:hover {
+    background: #3e2f3e;
+}
+
+@media (max-width: 750px) {
+
+    header {
+        z-index: 1000;
+    }
+
+    footer {
+        z-index: 1000;
+    }
+
+    .sidebar {
+        width: 70px;
+        align-items: flex-start;
+        padding-left: 5px;
+        overflow: hidden;
+        z-index: 900;
+    }
+
+    .sidebar h2 {
+        display: none;
+    }
+
+    .sidebar ul {
+        margin-top: 60px;
+    }
+
+    .sidebar ul li a {
+        font-size: 0;
+        justify-content: center;
+    }
+
+    .sidebar ul li a i {
+        font-size: 20px;
+        margin-right: 0;
+    }
+    .sidebar:hover {
+        width: 220px;
+    }
+
+    .sidebar:hover ul li a {
+        font-size: 16px;
+        justify-content: flex-start;
+    }
+
+    .sidebar:hover ul li a i {
+        margin-right: 10px;
+    }
+
+    .account-container {
+        margin-left: 30px;
+        font-size: 12px;
+        z-index: 950s;
+    }
+
+    .profile {
+        padding: 5px;
+    }
+
+    .profile-pic {
+        width: 50px;
+        height: auto;
+    }
+
+    .recent-activity {
+        margin-bottom: 20px;
+    }
 }
 
 .progress-container {
@@ -241,13 +376,17 @@ header label {
     .mini-stats {
         flex-direction: column;
         align-items: center;
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .stat-card {
         width: 100%;
         max-width: 300px;
         margin-bottom: 15px;
+    }
+
+    .section-reminder {
+        font-size: 12px;
     }
 }
 
