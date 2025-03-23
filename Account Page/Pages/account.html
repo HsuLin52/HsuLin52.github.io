@@ -26,7 +26,7 @@
                 <li><a href="#" class="nav-links">Quizzes</a></li>
                 <li><a href="../../Layout Worksheet/Worksheet page.html" class="nav-links">Worksheets</a></li>
                 <li><a href="../../Home Page/index.html#contact" class="nav-links">Contact</a></li>
-                <li><a href="#" class="nav-links"><i class="fa-solid fa-user"></i></a>
+                <li><a href="#" class="nav-links" id="pf"><i class="fa-solid fa-user"></i></a>
                     <ul class="user-profile">
                         <li> <a href="account.html" class="nav-links"> Profile </a> </li>
                         <li> <a href="progress.html" class="nav-links"> Progress </a> </li>
@@ -62,7 +62,25 @@
                     <div class="progress-bar" style="width: 70%;">70%</div>
                 </div>
             </div>
-            <button class="edit-profile-button"><i class="fa-solid fa-pen"></i> Edit Profile</button>
+            <!-- Edit Profile Modal Trigger -->
+            <label for="edit-mode" class="edit-profile-button"><i class="fa-solid fa-pen"></i> Edit Profile</label>
+
+            <!-- Modal Toggle (Hidden Checkbox) -->
+            <input type="checkbox" id="edit-mode" hidden>
+
+            <!-- Modal Window -->
+            <div class="mode">
+                <div class="edit-mode-box">
+                    <label for="edit-mode" class="edit-mode-close">&times;</label>
+                    <h3>Edit Profile</h3>
+                    <form>
+                        <input type="text" placeholder="Full Name" value="Mark Lee">
+                        <input type="email" placeholder="Email" value="marklee@gmail.com">
+                        <textarea placeholder="About Me">Math enthusiast and quiz lover.</textarea>
+                        <button type="submit">Save Changes</button>
+                    </form>
+                </div>
+            </div>
             <a href="progress.html"> <button class="view-progress-button"><i class="fa-solid fa-chart-line"></i> View Progress</button> </a>
         </section>
 

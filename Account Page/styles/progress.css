@@ -164,50 +164,91 @@ header label {
 }
 
 .progress-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 40px 20px;
-    margin-top: 20px;
-    flex: 1;
+    margin-top: 100px;
 }
 
-/* Progress Tracking */
-.progress-section {
-    margin-top: 20px;
-    text-align: center;
-    width: 80%;
+.section {
     max-width: 600px;
-    color: white;
-}
-
-.progress-section h2 {
-    margin-bottom: 10px;
-}
-
-.progress-item {
-    margin-bottom: 20px;
-}
-
-/* Progress Bar */
-.progress-bar-container {
+    margin: 0 auto 30px;
     background: white;
-    width: 100%;
-    height: 25px;
-    border-radius: 20px;
-    margin-top: 5px;
-    overflow: hidden;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
 }
 
-.progress-bar {
+.section h2 {
+    color: #6a0572;
+    margin-bottom: 15px;
+}
+
+.bar-track {
+    background: #eee;
+    height: 14px;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: 8px;
+}
+
+.bar-fill {
+    background: linear-gradient(to right, #624a63, #b4a1b5, #7a5d7c);
     height: 100%;
-    background: #b29eb2;
-    border-radius: 20px;
-    color: white;
+    transition: width 0.4s ease;
+}
+
+.mini-stats {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.stat-card {
+    flex: 1;
     text-align: center;
-    line-height: 25px;
-    transition: width 0.8s ease-in-out;
+    background: #fafafa;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.section-reminder {
+    background: #b4a1b5;
+    padding: 15px;
+    border-left: 5px solid #624a63;
+    border-radius: 8px;
+    margin-top: 30px;
+    font-weight: 500;
+    text-align: center;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 600px) {
+    .section {
+        width: 300px;
+        font-size: 11px;
+    }
+
+    .section-reminder {
+        font-size: 11px;
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
+    }
+
+    .mini-stats {
+        flex-direction: column;
+        align-items: center;
+        font-size: 14px;
+    }
+
+    .stat-card {
+        width: 100%;
+        max-width: 300px;
+        margin-bottom: 15px;
+    }
 }
 
 /* Footer */
