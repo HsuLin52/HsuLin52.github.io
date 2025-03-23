@@ -231,21 +231,11 @@ header label {
 }
 
 @media (max-width: 750px) {
-
-    header {
-        z-index: 1000;
-    }
-
-    footer {
-        z-index: 1000;
-    }
-
     .sidebar {
         width: 70px;
         align-items: flex-start;
         padding-left: 5px;
         overflow: hidden;
-        z-index: 900;
     }
 
     .sidebar h2 {
@@ -397,4 +387,5 @@ footer {
     padding: 20px;
     margin-top: auto;
     text-align: center;
+    z-index: 1000;
 }

@@ -23,7 +23,7 @@ html, body {
 /* Creating a new font */
 @font-face {
     font-family: 'GunPlayFont';
-    src: url('../fonts/gunplay\ rg.otf') format('woff2');
+    src: url('../../fonts/gunplay\ rg.otf') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
@@ -180,10 +180,6 @@ header label {
     background-color: #0556d7; 
 }
 
-
-
-
-
 footer {
     background: #333;
     color: white;
@@ -261,13 +257,9 @@ section div a:hover {
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
     
-    .grade-10 ,.grade-11,
-    .grade-12 {
+    .grade-10 ,.grade-11, .grade-12 {
         grid-template-columns: 1fr; 
     }
-
-    
-    
 
     section div h2 {
         font-size: 1.4rem;
@@ -280,5 +272,9 @@ section div a:hover {
     section div a {
         font-size: 1rem;
         padding: 8px 16px;
+    }
+
+    .grade-10 {
+        margin-top: 70px;
     }
 }
