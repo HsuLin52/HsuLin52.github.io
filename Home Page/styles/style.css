@@ -6,6 +6,10 @@
     text-decoration: none;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 html, body {font-family: 'GunPlayFont', sans-serif;
     background: #fdfdfd;
     color: #333;
