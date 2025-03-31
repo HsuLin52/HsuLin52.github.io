@@ -23,7 +23,7 @@ html, body {
 /* Creating a new font */
 @font-face {
     font-family: 'GunPlayFont';
-    src: url('../../fonts/gunplay\ rg.otf') format('woff2');
+    src: url('../fonts/gunplay\ rg.otf') format('woff2');
     font-weight: normal;
     font-style: normal;
 }

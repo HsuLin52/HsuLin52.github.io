@@ -1,0 +1,318 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html, body {font-family: 'GunPlayFont', sans-serif;
+    background: #fdfdfd;
+    color: #333;
+    min-height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+body {
+    background: linear-gradient(270deg, #7a5d7c, #624a63, #b4a1b5);
+    background-size: 600% 600%;
+    animation: gradientAnimation 10s ease infinite;
+}
+
+/* Gradient Animation for the login page */
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+}
+
+/* Creating a new font */
+@font-face {
+    font-family: 'GunPlayFont';
+    src: url('../../fonts/gunplay\ rg.otf') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* General Button Styling */
+button {font-size: 18px;
+    transition: all 0.3s ease-in-out;}
+
+/* Navigation Bar */
+header {position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #624a63;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    padding: 0px 3% 0px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.logo {font-size: 30px;
+    color: white;
+}
+
+.logo:hover {
+    scale: 0.95;
+    transition: 0.3s;
+}
+
+.navigation {
+    list-style: none;
+}
+
+.navigation li {
+    position: relative;
+    float: left;
+}
+
+.nav-links {
+    font-size: 18px;
+    color: white;
+    padding: 20px;
+    display: block;
+}
+
+.nav-links:hover {
+    color: white;
+    background: #3e2f3e;
+}
+
+.user-profile {
+    position: absolute;
+    left: 0;
+    width: 165px;
+    background: #674e68b9;
+    display: none;
+}
+
+.user-profile li {
+    width: 100%;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    text-align: left;
+    list-style: none;
+}
+
+/* For further lists within the navigation bar */
+.user-profile li ul {
+    left: 165px;
+    top: 0;
+}
+
+.navigation li:focus-within > .user-profile,
+.navigation li:hover > .user-profile {
+    display: initial;
+}
+
+#menu-bar {
+    display: none;
+}
+
+header label {
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width:898px) {
+    header {
+        padding: 20px;
+    }
+
+    header label {
+        display: initial;
+    }
+
+    nav {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #624a63;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+        display: none;
+    }
+
+    .nav-links {
+        text-align: right;
+    }
+
+    .navigation li {
+        width: 100%;
+    }
+
+    .user-profile {
+        position: relative;
+        width: 100%;
+    }
+
+    .user-profile li {
+        background: #674e68b9;
+    }
+
+    /* For further lists within the navigation bar */
+    .user-profile li ul {
+        width: 100%;
+        left: 0;
+    }
+
+    #menu-bar:checked ~ nav {
+        display: initial;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+}
+
+/* Log in Container */
+
+.log-in {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-container {
+    background: #fff;
+    padding: 2.5rem 2rem;
+    border-radius: 1rem;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.login-form {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form label {
+    text-align: left;
+    margin-bottom: 0.25rem;
+    color: #333;
+    font-weight: 500;
+}
+
+.login-form input {
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #aaa;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.login-form button {
+    padding: 0.75rem;
+    border: none;
+    background: #624a63;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.login-form button:hover {
+    background: #7a5289;
+}
+
+.login-form input:focus {
+    outline: none;
+    border-color: #7a5289;
+    box-shadow: 0 0 5px rgba(122, 82, 137, 0.5);
+}
+
+.login-form button:hover {
+    transform: scale(1.03);
+}
+
+.note {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
+
+.note a {
+    color: #7a5289;
+    text-decoration: none;
+    }
+
+.note a:hover {
+    text-decoration: underline;
+}
+
+.password-wrapper {
+    position: relative;
+}
+
+.password-wrapper input {
+    width: 100%;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #aaa;
+}
+
+.form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    color: #555;
+}
+
+.form-options a {
+    color: #7a5289;
+    text-decoration: none;
+}
+
+.form-options a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 700px) {
+    .login-container {
+      padding: 1.5rem 1rem;
+    }
+  
+    .login-form input,
+    .login-form button {
+      font-size: 0.95rem;
+    }
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    padding: 20px;
+    margin-top: auto;
+    text-align: center;
+}
