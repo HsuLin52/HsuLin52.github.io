@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculus Grade 12 Quiz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .question-section {
+            margin-bottom: 20px;
+        }
+        .question {
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+        .options {
+            margin-left: 20px;
+        }
+        .answer {
+            font-style: italic;
+            color: green;
+            margin-top: 5px;
+        }
+        .grade-section {
+            margin-bottom: 40px;
+        }
+        .grade-title {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-top: 30px;
+        }
+        .level-title {
+            font-size: 1.3em;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        .submit-btn {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .submit-btn:hover {
+            background-color: #45a049;
+        }
+        .Goback {
+            display: block;
+            text-align: center; 
+            margin: 20px auto; 
+            font-size: 18px;
+            background-color: #788ee7; 
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            width: 150px; 
+            text-align: center;
+            margin-top: 15px;
+        }
+        .Goback:hover {
+            background-color: #0556d7; 
+        }
+    </style>
+</head>
+<body>
+
+    <div class="grade-section">
+        <div class="grade-title">Calculus Grade 12 Quiz</div>
+
+        
+        <div class="level-title">Easy Questions</div>
+        <form id="quizForm">
+            <div class="question-section">
+                <div class="question">1. Which of the following is a first-order differential equation?</div>
+                <div class="options">
+                    <label><input type="radio" name="q1" value="a"> a) dy/dx = x + y</label><br>
+                    <label><input type="radio" name="q1" value="b"> b) d²y/dx² + 3y = 0</label><br>
+                    <label><input type="radio" name="q1" value="c"> c) y'' + 2y' - 5y = 4</label><br>
+                    <label><input type="radio" name="q1" value="d"> d) d³y/dx³ + y = 0</label>
+                </div>
+            </div>
+
+            <div class="question-section">
+                <div class="question">2. What is the integral of e^x dx?</div>
+                <div class="options">
+                    <label><input type="radio" name="q2" value="a"> a) e^x + C</label><br>
+                    <label><input type="radio" name="q2" value="b"> b) xe^x + C</label><br>
+                    <label><input type="radio" name="q2" value="c"> c) e^(x+1) + C</label><br>
+                    <label><input type="radio" name="q2" value="d"> d) ln(e^x) + C</label>
+                </div>
+            </div>
+
+            <div class="question-section">
+                <div class="question">3. What is the partial derivative of f(x, y) = x²y with respect to x?</div>
+                <div class="options">
+                    <label><input type="radio" name="q3" value="a"> a) 2xy</label><br>
+                    <label><input type="radio" name="q3" value="b"> b) x²</label><br>
+                    <label><input type="radio" name="q3" value="c"> c) y</label><br>
+                    <label><input type="radio" name="q3" value="d"> d) 2y</label>
+                </div>
+            </div>
+
+            <div class="question-section">
+                <div class="question">4. Solve the separable differential equation dy/dx = 3x².</div>
+                <div class="options">
+                    <label><input type="radio" name="q4" value="d"> d) y = x³/3 + C</label><br>
+                    <label><input type="radio" name="q4" value="a"> a) y = x³ + C</label><br>
+                    <label><input type="radio" name="q4" value="b"> b) y = 3x³ + C</label><br>
+                    <label><input type="radio" name="q4" value="c"> c) y = x² + C</label>
+                </div>
+            </div>
+
+            <div class="question-section">
+                <div class="question">5. Find the integral of cos(x).</div>
+                <div class="options">
+                    <label><input type="radio" name="q5" value="a"> a) sin(x) + C</label><br>
+                    <label><input type="radio" name="q5" value="b"> b) -sin(x) + C</label><br>
+                    <label><input type="radio" name="q5" value="c"> c) cos(x) + C</label><br>
+                    <label><input type="radio" name="q5" value="d"> d) -cos(x) + C</label>
+                </div>
+            </div>
+
+        
+        <div class="level-title">Medium Questions</div>
+            <div class="question-section">
+                <div class="question">6. Solve the differential equation dy/dx = 4y.</div>
+                <div class="options">
+                    <label><input type="radio" name="q6" value="b"> b) y = Ce^(4x)</label><br>
+                    <label><input type="radio" name="q6" value="a"> a) y = e^(4x) + C</label><br>
+                    <label><input type="radio" name="q6" value="c"> c) y = 4e^x + C</label><br>
+                    <label><input type="radio" name="q6" value="d"> d) y = x e^4 + C</label>
+                </div>
+            </div>
+
+            <div class="question-section">
+                <div class="question">7. Find the volume of a solid of revolution formed by rotating y = x² about the x-axis from x = 0 to x = 2.</div>
+                <div class="options">
+                    <label><input type="radio" name="q7" value="a"> a) 8π/3</label><br>
+                    <label><input type="radio" name="q7" value="b"> b) 4π/3</label><br>
+                    <label><input type="radio" name="q7" value="c"> c) 16π/5</label><br>
+                    <label><input type="radio" name="q7" value="d"> d) 32π/5</label>
+                </div>
+            </div>
+
+            <div class="question-section">
+                <div class="question">8. Evaluate ∫ 1/(1 + x²) dx.</div>
+                <div class="options">
+                    <label><input type="radio" name="q8" value="a"> a) tan⁻¹(x) + C</label><br>
+                    <label><input type="radio" name="q8" value="b"> b) ln(1 + x²) + C</label><br>
+                    <label><input type="radio" name="q8" value="c"> c) e^(x²) + C</label><br>
+                    <label><input type="radio" name="q8" value="d"> d) x ln(x) + C</label>
+                </div>
+            </div>
+
+            <div class="question-section">
+                <div class="question">9. Which of the following is the general solution of d²y/dx² = 0?</div>
+                <div class="options">
+                    <label><input type="radio" name="q9" value="a"> a) y = C₁x + C₂</label><br>
+                    <label><input type="radio" name="q9" value="b"> b) y = e^x + C</label><br>
+                    <label><input type="radio" name="q9" value="c"> c) y = sin(x) + C</label><br>
+                    <label><input type="radio" name="q9" value="d"> d) y = C₁e^x + C₂e^(-x)</label>
+                </div>
+            </div>
+
+            <div class="question-section">
+                <div class="question">10. Find the partial derivative of f(x, y) = x² + 3xy + y² with respect to y.</div>
+                <div class="options">
+                    <label><input type="radio" name="q10" value="a"> a) 3x + 2y</label><br>
+                    <label><input type="radio" name="q10" value="b"> b) 2x + 3y</label><br>
+                    <label><input type="radio" name="q10" value="c"> c) x + 3</label><br>
+                    <label><input type="radio" name="q10" value="d"> d) 2y + x²</label>
+                </div>
+            </div>
+
+      
+        <div class="level-title">Hard Questions</div>
+            <div class="question-section">
+                <div class="question">11. Find the solution to dy/dx = x/y, given y(0) = 1.</div>
+                <div class="options">
+                    <label><input type="radio" name="q11" value="a"> a) y² = x² + 1</label><br>
+                    <label><input type="radio" name="q11" value="b"> b) y = x² + 1</label><br>
+                    <label><input type="radio" name="q11" value="c"> c) y = x + C</label><br>
+                    <label><input type="radio" name="q11" value="d"> d) y = ln(x) + 1</label>
+                </div>
+            </div>
+
+            <div class="question-section">
+                <div class="question">12. Evaluate ∫ x ln(x) dx using integration by parts.</div>
+                <div class="options">
+                    <label><input type="radio" name="q12" value="b"> b) (x² ln(x))/2 - x²/4 + C</label><br>
+                    <label><input type="radio" name="q12" value="a"> a) (x²/2) ln(x) - x²/4 + C</label><br>
+                    <label><input type="radio" name="q12" value="c"> c) x ln(x) - x + C</label><br>
+                    <label><input type="radio" name="q12" value="d"> d) x²/2 + C</label>
+                </div>
+            </div>
+
+            <div class="question-section">
+                <div class="question">13. Find the divergence of the vector field F = (x², y², z²).</div>
+                <div class="options">
+                    <label><input type="radio" name="q13" value="b"> b) 2x + 2y + 2z</label><br>
+                    <label><input type="radio" name="q13" value="a"> a) x + y + z</label><br>
+                    <label><input type="radio" name="q13" value="c"> c) x² + y² + z²</label><br>
+                    <label><input type="radio" name="q13" value="d"> d) 0</label>
+                </div>
+            </div>
+
+            <div class="question-section">
+                <div class="question">14. Find the Jacobian determinant of f(x, y) = (x² + y, xy).</div>
+                <div class="options">
+                    <label><input type="radio" name="q14" value="c"> c) 2x – y</label><br>
+                    <label><input type="radio" name="q14" value="a"> a) x - y</label><br>
+                    <label><input type="radio" name="q14" value="b"> b) x + y</label><br>
+                    <label><input type="radio" name="q14" value="d"> d) 2x + y</label>
+                </div>
+            </div>
+
+            <div class="question-section">
+                <div class="question">15. Evaluate the triple integral ∫∫∫ (x + y + z) dV over the unit cube 0 ≤ x, y, z ≤ 1.</div>
+                <div class="options">
+                    <label><input type="radio" name="q15" value="a"> a) 3/2</label><br>
+                    <label><input type="radio" name="q15" value="b"> b) 3</label><br>
+                    <label><input type="radio" name="q15" value="c"> c) 1/2</label><br>
+                    <label><input type="radio" name="q15" value="d"> d) 1</label>
+                </div>
+            </div>
+
+          
+            <button type="button" class="submit-btn" onclick="checkAnswers()">Submit</button>
+        </form>
+
+        <div id="results" style="display: none; margin-top: 20px;">
+            <div id="q1Result"></div>
+            <div id="q2Result"></div>
+            <div id="q3Result"></div>
+            <div id="q4Result"></div>
+            <div id="q5Result"></div>
+            <div id="q6Result"></div>
+            <div id="q7Result"></div>
+            <div id="q8Result"></div>
+            <div id="q9Result"></div>
+            <div id="q10Result"></div>
+            <div id="q11Result"></div>
+            <div id="q12Result"></div>
+            <div id="q13Result"></div>
+            <div id="q14Result"></div>
+            <div id="q15Result"></div>
+        </div>
+        <a class="Goback" href="/Quizz/Quizz.html">← Go Back</a>    
+    </div>
+
+    <script>
+        function checkAnswers() {
+            var correctAnswers = {
+                q1: "a", q2: "a", q3: "a", q4: "d", q5: "a", q6: "b", 
+                q7: "a", q8: "a", q9: "a", q10: "a", q11: "a", q12: "b", q13: "b",
+                q14: "c", q15: "a"
+            };
+
+           
+            checkAnswer(document.querySelector('input[name="q1"]:checked'), "q1", correctAnswers.q1);
+            checkAnswer(document.querySelector('input[name="q2"]:checked'), "q2", correctAnswers.q2);
+            checkAnswer(document.querySelector('input[name="q3"]:checked'), "q3", correctAnswers.q3);
+            checkAnswer(document.querySelector('input[name="q4"]:checked'), "q4", correctAnswers.q4);
+            checkAnswer(document.querySelector('input[name="q5"]:checked'), "q5", correctAnswers.q5);
+            checkAnswer(document.querySelector('input[name="q6"]:checked'), "q6", correctAnswers.q6);
+            checkAnswer(document.querySelector('input[name="q7"]:checked'), "q7", correctAnswers.q7);
+            checkAnswer(document.querySelector('input[name="q8"]:checked'), "q8", correctAnswers.q8);
+            checkAnswer(document.querySelector('input[name="q9"]:checked'), "q9", correctAnswers.q9);
+            checkAnswer(document.querySelector('input[name="q10"]:checked'), "q10", correctAnswers.q10);
+            checkAnswer(document.querySelector('input[name="q11"]:checked'), "q11", correctAnswers.q11);
+            checkAnswer(document.querySelector('input[name="q12"]:checked'), "q12", correctAnswers.q12);
+            checkAnswer(document.querySelector('input[name="q13"]:checked'), "q13", correctAnswers.q13);
+            checkAnswer(document.querySelector('input[name="q14"]:checked'), "q14", correctAnswers.q14);
+            checkAnswer(document.querySelector('input[name="q15"]:checked'), "q15", correctAnswers.q15);
+
+           
+            document.getElementById("results").style.display = "block";
+        }
+
+        function checkAnswer(answer, questionId, correctAnswer) {
+            if (answer && answer.value === correctAnswer) {
+                document.getElementById(questionId + "Result").innerText = "Correct!";
+                document.getElementById(questionId + "Result").style.color = "green";
+            } else {
+                document.getElementById(questionId + "Result").innerText = "Incorrect! Correct answer: " + correctAnswer;
+                document.getElementById(questionId + "Result").style.color = "red";
+            }
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,381 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html, body {font-family: 'GunPlayFont', sans-serif;
+    background: #7a5d7c;
+    color: #333;
+    min-height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+main {
+    flex: 1;
+}
+
+/* Creating a new font */
+@font-face {
+    font-family: 'GunPlayFont';
+    src: url('../../fonts/gunplay\ rg.otf') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* General Button Styling */
+button {
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2)
+}
+
+/* Navigation Bar */
+header {position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #624a63;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    padding: 0px 3% 0px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.logo {font-size: 30px;
+    color: white;
+}
+
+.logo:hover {
+    scale: 0.95;
+    transition: 0.3s;
+}
+
+.navigation {
+    list-style: none;
+}
+
+.navigation li {
+    position: relative;
+    float: left;
+}
+
+.nav-links {
+    font-size: 18px;
+    color: white;
+    padding: 20px;
+    display: block;
+}
+
+.nav-links:hover {
+    color: white;
+    background: #3e2f3e;
+}
+
+.user-profile {
+    position: absolute;
+    left: 0;
+    width: 165px;
+    background: #674e68b9;
+    display: none;
+}
+
+.user-profile li {
+    width: 100%;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    text-align: left;
+    list-style: none;
+}
+
+/* For further lists within the navigation bar */
+.user-profile li ul {
+    left: 165px;
+    top: 0;
+}
+
+.navigation li:focus-within > .user-profile,
+.navigation li:hover > .user-profile {
+    display: initial;
+}
+
+#menu-bar {
+    display: none;
+}
+
+header label {
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width:898px) {
+    header {
+        padding: 20px;
+    }
+
+    header label {
+        display: initial;
+    }
+
+    nav {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #624a63;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+        display: none;
+    }
+
+    .nav-links {
+        text-align: right;
+    }
+
+    .navigation li {
+        width: 100%;
+    }
+
+    .user-profile {
+        position: relative;
+        width: 100%;
+    }
+
+    .user-profile li {
+        background: #674e68b9;
+    }
+
+    /* For further lists within the navigation bar */
+    .user-profile li ul {
+        width: 100%;
+        left: 0;
+    }
+
+    #menu-bar:checked ~ nav {
+        display: initial;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+}
+
+/* Sidebar Navigation */
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 200px;
+    background: #5b3d5e;
+    color: white;
+    padding-top: 15px;
+    padding-bottom: 50px;
+    background: linear-gradient(135deg, #5b3d5e, #3e2f3e);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: width 0.3s ease-in-out;
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    width: 100%;
+    padding: 0;
+}
+
+.sidebar a[href="account.html"] {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.sidebar ul li {
+    width: 100%;
+    margin: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.sidebar ul li a {
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.sidebar ul li a i {
+    margin-right: 10px;
+}
+
+.sidebar ul li a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+}
+
+.sidebar ul li a:hover {
+    background: #3e2f3e;
+}
+
+/* User Account Layout */
+.account-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 80px 20px;
+    height: 100vh;
+    flex: 1;
+}
+
+/* Profile Section */
+.profile {
+    background: #fff;
+    color: #624a63;
+    backdrop-filter: blur(10px);
+    margin-top: 5px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 40px;
+}
+
+.profile p {
+    margin-bottom: 10px;
+}
+
+.profile-pic {
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+/* Edit Profile Button */
+.edit-profile-button, .view-progress-button {
+    background: #7a5d7c;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.edit-profile-button:hover, .view-progress-button:hover {
+    background: #b4a1b5;
+    transform: scale(0.95);
+}
+
+
+/* Profile Completion Bar */
+.profile-completion {
+    margin: 15px 0;
+}
+
+.progress-bar-container {
+    background: #ddd;
+    width: 100%;
+    height: 20px;
+    border-radius: 10px;
+    margin-top: 5px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 100%;
+    background: #b29eb2;
+    color: white;
+    text-align: center;
+    line-height: 20px;
+    font-weight: bold;
+    transition: width 0.5s ease-in-out;
+}
+
+/* Recent Activity */
+.recent-activity {
+    background: white;
+    color: #624a63;
+    padding: 20px;
+    margin-top: 15px;
+    width: 350px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.recent-activity h3 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.recent-activity ul {
+    list-style: none;
+    padding: 0;
+}
+
+.recent-activity ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+.recent-activity ul li i {
+    margin-right: 10px;
+    color: #624a63;
+}
+
+/* Achievements Section */
+.achievements {
+    background: white;
+    color: #624a63;
+    padding: 20px;
+    margin-top: 15px;
+    width: 350px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.badge-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.badge {
+    background: linear-gradient(135deg, #7a5d7c, #624a63, #b4a1b5);
+    color: white;
+    padding: 10px;
+    margin-left: 5px;
+    border-radius: 5px;
+    font-size: 13px;
+}
+
+.badge:hover {
+    background: linear-gradient(135deg, #624a63, #b4a1b5, #7a5d7c);
+    color: #5b3d5e;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    padding: 20px;
+    margin-top: auto;
+    text-align: center;
+}

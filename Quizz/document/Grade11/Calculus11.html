@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculus Grade 11 Quiz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .question-section {
+            margin-bottom: 20px;
+        }
+        .question {
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+        .options {
+            margin-left: 20px;
+        }
+        .answer {
+            font-style: italic;
+            color: green;
+            margin-top: 5px;
+        }
+        .grade-section {
+            margin-bottom: 40px;
+        }
+        .grade-title {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-top: 30px;
+        }
+        .level-title {
+            font-size: 1.3em;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        .submit-btn {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .submit-btn:hover {
+            background-color: #45a049;
+        }
+        .Goback {
+            display: block;
+            text-align: center; 
+            margin: 20px auto; 
+            font-size: 18px;
+            background-color: #788ee7; 
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            width: 150px; 
+            text-align: center;
+            margin-top: 15px;
+        }
+        .Goback:hover {
+            background-color: #0556d7; 
+        }
+    </style>
+</head>
+<body>
+
+    <div class="grade-section">
+        <div class="grade-title">Calculus Grade 11 Quiz</div>
+
+        
+        <div class="level-title">Easy Questions</div>
+        <form id="quizForm">
+            <div class="question-section">
+                <div class="question">1. Evaluate the limit: lim (x → 2) (x² - 4)/(x - 2).</div>
+                <div class="options">
+                    <label><input type="radio" name="q1" value="b"> b) 4</label><br>
+                    <label><input type="radio" name="q1" value="a"> a) 2</label><br>
+                    <label><input type="radio" name="q1" value="c"> c) 3</label><br>
+                    <label><input type="radio" name="q1" value="d"> d) 5</label>
+                </div>
+            </div>
+
+            <div class="question-section">
+                <div class="question">2. What is the derivative of f(x) = 5x³?</div>
+                <div class="options">
+                    <label><input type="radio" name="q2" value="b"> b) 15x²</label><br>
+                    <label><input type="radio" name="q2" value="a"> a) 5x²</label><br>
+                    <label><input type="radio" name="q2" value="c"> c) 10x</label><br>
+                    <label><input type="radio" name="q2" value="d"> d) 20x³</label>
+                </div>
+            </div>
+
+            <div class="question-section">
+                <div class="question">3. Find the integral of x with respect to x.</div>
+                <div class="options">
+                    <label><input type="radio" name="q3" value="b"> b) x²/2 + C</label><br>
+                    <label><input type="radio" name="q3" value="a"> a) x² + C</label><br>
+                    <label><input type="radio" name="q3" value="c"> c) x³ + C</label><br>
+                    <label><input type="radio" name="q3" value="d"> d) 2x + C</label>
+                </div>
+            </div>
+
+            <div class="question-section">
+                <div class="question">4. Evaluate lim (x → 0) (sin x)/x.</div>
+                <div class="options">
+                    <label><input type="radio" name="q4" value="b"> b) 1</label><br>
+                    <label><input type="radio" name="q4" value="a"> a) 0</label><br>
+                    <label><input type="radio" name="q4" value="c"> c) -1</label><br>
+                    <label><input type="radio" name="q4" value="d"> d) Undefined</label>
+                </div>
+            </div>
+
+            <div class="question-section">
+                <div class="question">5. What is the integral of 3x²?</div>
+                <div class="options">
+                    <label><input type="radio" name="q5" value="a"> a) x³ + C</label><br>
+                    <label><input type="radio" name="q5" value="b"> b) x² + C</label><br>
+                    <label><input type="radio" name="q5" value="c"> c) x³/3 + C</label><br>
+                    <label><input type="radio" name="q5" value="d"> d) x⁴ + C</label>
+                </div>
+            </div>
+
+        
+        <div class="level-title">Medium Questions</div>
+            <div class="question-section">
+                <div class="question">6. Find the derivative of f(x) = 2x⁴ - 3x² + x - 5.</div>
+                <div class="options">
+                    <label><input type="radio" name="q6" value="a"> a) 8x³ - 6x + 1</label><br>
+                    <label><input type="radio" name="q6" value="b"> b) 4x³ - 6x + 1</label><br>
+                    <label><input type="radio" name="q6" value="c"> c) 8x³ - 6x² + 1</label><br>
+                    <label><input type="radio" name="q6" value="d"> d) 4x³ - 3x + 1</label>
+                </div>
+            </div>
+
+            <div class="question-section">
+                <div class="question">7. Evaluate lim (x → ∞) (5x² + 3)/(2x² + 7).</div>
+                <div class="options">
+                    <label><input type="radio" name="q7" value="b"> b) 5/2</label><br>
+                    <label><input type="radio" name="q7" value="a"> a) 0</label><br>
+                    <label><input type="radio" name="q7" value="c"> c) 2/5</label><br>
+                    <label><input type="radio" name="q7" value="d"> d) ∞</label>
+                </div>
+            </div>
+
+            <div class="question-section">
+                <div class="question">8. Which differentiation rule is used to find the derivative of f(x) = (3x² + 1)(x - 2)?</div>
+                <div class="options">
+                    <label><input type="radio" name="q8" value="c"> c) Product rule</label><br>
+                    <label><input type="radio" name="q8" value="a"> a) Power rule</label><br>
+                    <label><input type="radio" name="q8" value="b"> b) Chain rule</label><br>
+                    <label><input type="radio" name="q8" value="d"> d) Quotient rule</label>
+                </div>
+            </div>
+
+            <div class="question-section">
+                <div class="question">9. Find the derivative of ln(2x + 3).</div>
+                <div class="options">
+                    <label><input type="radio" name="q9" value="b"> b) 2/(2x + 3)</label><br>
+                    <label><input type="radio" name="q9" value="a"> a) 1/(2x + 3)</label><br>
+                    <label><input type="radio" name="q9" value="c"> c) ln(2x)</label><br>
+                    <label><input type="radio" name="q9" value="d"> d) ln(x + 3)</label>
+                </div>
+            </div>
+
+            <div class="question-section">
+                <div class="question">10. Evaluate the integral ∫(4x³ - 2x)dx.</div>
+                <div class="options">
+                    <label><input type="radio" name="q10" value="a"> a) x⁴ - x² + C</label><br>
+                    <label><input type="radio" name="q10" value="b"> b) x⁴/4 - x²/2 + C</label><br>
+                    <label><input type="radio" name="q10" value="c"> c) 4x⁴ - 2x² + C</label><br>
+                    <label><input type="radio" name="q10" value="d"> d) x³ - x + C</label>
+                </div>
+            </div>
+
+       
+        <div class="level-title">Hard Questions</div>
+            <div class="question-section">
+                <div class="question">11. Evaluate lim (x → 0) (e^x - 1)/x.</div>
+                <div class="options">
+                    <label><input type="radio" name="q11" value="b"> b) 1</label><br>
+                    <label><input type="radio" name="q11" value="a"> a) e</label><br>
+                    <label><input type="radio" name="q11" value="c"> c) 0</label><br>
+                    <label><input type="radio" name="q11" value="d"> d) Undefined</label>
+                </div>
+            </div>
+
+            <div class="question-section">
+                <div class="question">12. Find the second derivative of f(x) = x⁵ - 2x³ + x.</div>
+                <div class="options">
+                    <label><input type="radio" name="q12" value="a"> a) 20x³ - 6x</label><br>
+                    <label><input type="radio" name="q12" value="b"> b) 5x⁴ - 6x²</label><br>
+                    <label><input type="radio" name="q12" value="c"> c) 20x³ - 6x + 1</label><br>
+                    <label><input type="radio" name="q12" value="d"> d) 20x² - 6x</label>
+                </div>
+            </div>
+
+            <div class="question-section">
+                <div class="question">13. Which integration technique is best for evaluating ∫ x cos(x) dx?</div>
+                <div class="options">
+                    <label><input type="radio" name="q13" value="b"> b) Integration by parts</label><br>
+                    <label><input type="radio" name="q13" value="a"> a) Substitution</label><br>
+                    <label><input type="radio" name="q13" value="c"> c) Partial fractions</label><br>
+                    <label><input type="radio" name="q13" value="d"> d) Trigonometric substitution</label>
+                </div>
+            </div>
+
+            <div class="question-section">
+                <div class="question">14. Find the integral of 1/(x² + 1).</div>
+                <div class="options">
+                    <label><input type="radio" name="q14" value="b"> b) arctan(x) + C</label><br>
+                    <label><input type="radio" name="q14" value="a"> a) ln(x² + 1) + C</label><br>
+                    <label><input type="radio" name="q14" value="c"> c) e^x + C</label><br>
+                    <label><input type="radio" name="q14" value="d"> d) ln(x) + C</label>
+                </div>
+            </div>
+
+            <div class="question-section">
+                <div class="question">15. Evaluate ∫ e^(2x) dx.</div>
+                <div class="options">
+                    <label><input type="radio" name="q15" value="b"> b) e^(2x)/2 + C</label><br>
+                    <label><input type="radio" name="q15" value="a"> a) e^(2x) + C</label><br>
+                    <label><input type="radio" name="q15" value="c"> c) 2e^x + C</label><br>
+                    <label><input type="radio" name="q15" value="d"> d) e^x + C</label>
+                </div>
+            </div>
+
+           
+            <button type="button" class="submit-btn" onclick="checkAnswers()">Submit</button>
+        </form>
+
+        
+        <div id="results" style="display: none; margin-top: 20px;">
+            <div id="q1Result"></div>
+            <div id="q2Result"></div>
+            <div id="q3Result"></div>
+            <div id="q4Result"></div>
+            <div id="q5Result"></div>
+            <div id="q6Result"></div>
+            <div id="q7Result"></div>
+            <div id="q8Result"></div>
+            <div id="q9Result"></div>
+            <div id="q10Result"></div>
+            <div id="q11Result"></div>
+            <div id="q12Result"></div>
+            <div id="q13Result"></div>
+            <div id="q14Result"></div>
+            <div id="q15Result"></div>
+        </div>
+        <a class="Goback" href="/Quizz/Quizz.html">← Go Back</a>    
+    </div>
+
+    <script>
+        function checkAnswers() {
+            var correctAnswers = {
+                q1: "b", q2: "b", q3: "b", q4: "b", q5: "a", q6: "a", 
+                q7: "b", q8: "c", q9: "b", q10: "a", q11: "b", q12: "a", q13: "b",
+                q14: "b", q15: "b"
+            };
+
+            
+            checkAnswer(document.querySelector('input[name="q1"]:checked'), "q1", correctAnswers.q1);
+            checkAnswer(document.querySelector('input[name="q2"]:checked'), "q2", correctAnswers.q2);
+            checkAnswer(document.querySelector('input[name="q3"]:checked'), "q3", correctAnswers.q3);
+            checkAnswer(document.querySelector('input[name="q4"]:checked'), "q4", correctAnswers.q4);
+            checkAnswer(document.querySelector('input[name="q5"]:checked'), "q5", correctAnswers.q5);
+            checkAnswer(document.querySelector('input[name="q6"]:checked'), "q6", correctAnswers.q6);
+            checkAnswer(document.querySelector('input[name="q7"]:checked'), "q7", correctAnswers.q7);
+            checkAnswer(document.querySelector('input[name="q8"]:checked'), "q8", correctAnswers.q8);
+            checkAnswer(document.querySelector('input[name="q9"]:checked'), "q9", correctAnswers.q9);
+            checkAnswer(document.querySelector('input[name="q10"]:checked'), "q10", correctAnswers.q10);
+            checkAnswer(document.querySelector('input[name="q11"]:checked'), "q11", correctAnswers.q11);
+            checkAnswer(document.querySelector('input[name="q12"]:checked'), "q12", correctAnswers.q12);
+            checkAnswer(document.querySelector('input[name="q13"]:checked'), "q13", correctAnswers.q13);
+            checkAnswer(document.querySelector('input[name="q14"]:checked'), "q14", correctAnswers.q14);
+            checkAnswer(document.querySelector('input[name="q15"]:checked'), "q15", correctAnswers.q15);
+
+            
+            document.getElementById("results").style.display = "block";
+        }
+
+        function checkAnswer(answer, questionId, correctAnswer) {
+            if (answer && answer.value === correctAnswer) {
+                document.getElementById(questionId + "Result").innerText = "Correct!";
+                document.getElementById(questionId + "Result").style.color = "green";
+            } else {
+                document.getElementById(questionId + "Result").innerText = "Incorrect! Correct answer: " + correctAnswer;
+                document.getElementById(questionId + "Result").style.color = "red";
+            }
+        }
+    </script>
+
+</body>
+</html>
