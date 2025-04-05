@@ -51,13 +51,13 @@
     <!-- Main User Account Content -->
     <main class="account-container">
         <section class="profile">
-            <img src="../images/profile.jpg" alt="User Profile picture" class="profile-pic">
+            <img id="profileImage" src="../images/profile.jpg" alt="Profile Picture">
             <h2>Mark Lee</h2>
-            <p>Email: marklee@gmail.com</p>
+            <p id="Email">Email: marklee@gmail.com</p>
+            <p id="Message">Math enthusiast and quiz lover.</p>
 
             <!-- Profile Completion Bar -->
             <div class="profile-completion">
-                <p>Profile Completion: 70%</p>
                 <div class="progress-bar-container">
                     <div class="progress-bar" style="width: 70%;">70%</div>
                 </div>
@@ -74,10 +74,13 @@
                     <label for="edit-mode" class="edit-mode-close">&times;</label>
                     <h3>Edit Profile</h3>
                     <form>
-                        <input type="text" placeholder="Full Name" value="Mark Lee">
-                        <input type="email" placeholder="Email" value="marklee@gmail.com">
-                        <textarea placeholder="About Me">Math enthusiast and quiz lover.</textarea>
-                        <button type="submit">Save Changes</button>
+                        <label for="uploadImage">Choose your profile picture</label>
+                        <input type="file" id="uploadImage" accept="image/*">
+                        <input type="text" id="profileName" placeholder="Full Name" value="Mark Lee">
+                        <input type="email" id="profileEmail" placeholder="Email" value="marklee@gmail.com">
+                        <input type="text" id="profileMessage" placeholder="About Me" value="Math enthusiast and quiz lover.">
+                        <button type="button" onclick="saveProfile()">Save Changes</button>
+                        <p id="saveMessage" class="message"></p>
                     </form>
                 </div>
             </div>
@@ -109,5 +112,7 @@
     <footer>
         <p>&copy; 2025 MathsLearn. All Rights Reserved to HAT.</p>
     </footer>
+
+    <script src="../scripts/account.js"></script>
 </body>
 </html>
