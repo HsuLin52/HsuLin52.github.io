@@ -95,12 +95,6 @@ header {position: fixed;
     list-style: none;
 }
 
-/* For further lists within the navigation bar */
-.user-profile li ul {
-    left: 165px;
-    top: 0;
-}
-
 .navigation li:focus-within > .user-profile,
 .navigation li:hover > .user-profile {
     display: initial;
@@ -150,12 +144,6 @@ header label {
 
     .user-profile li {
         background: #674e68b9;
-    }
-
-    /* For further lists within the navigation bar */
-    .user-profile li ul {
-        width: 100%;
-        left: 0;
     }
 
     #menu-bar:checked ~ nav {

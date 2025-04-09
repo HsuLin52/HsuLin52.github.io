@@ -33,6 +33,14 @@ body {
     100% { background-position: 0% 50%; }
 }
 
+/* Log In Container Animation */
+@keyframes fadeSlideIn {
+    from {opacity: 0;
+        transform: translateY(-30px);}
+    to {opacity: 1;
+        transform: translateY(0);}
+}
+
 main {
     flex: 1;
     display: flex;
@@ -112,12 +120,6 @@ header {position: fixed;
     list-style: none;
 }
 
-/* For further lists within the navigation bar */
-.user-profile li ul {
-    left: 165px;
-    top: 0;
-}
-
 .navigation li:focus-within > .user-profile,
 .navigation li:hover > .user-profile {
     display: initial;
@@ -169,12 +171,6 @@ header label {
         background: #674e68b9;
     }
 
-    /* For further lists within the navigation bar */
-    .user-profile li ul {
-        width: 100%;
-        left: 0;
-    }
-
     #menu-bar:checked ~ nav {
         display: initial;
     }
@@ -200,6 +196,7 @@ header label {
     max-width: 400px;
     text-align: center;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    animation: fadeSlideIn 1.5s ease-in-out;
 }
 
 .login-form {
@@ -245,7 +242,7 @@ header label {
 }
 
 .login-form button:hover {
-    transform: scale(1.03);
+    transform: scale(0.97);
 }
 
 .note {
