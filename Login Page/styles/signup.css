@@ -280,6 +280,23 @@ header label {
     margin-top: 10px;
     font-size: 0.9rem;
 }
+
+.password-wrapper {
+    position: relative;
+}
+
+.password-wrapper input {
+    width: 100%;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 12px;
+    top: 40%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #aaa;
+}
   
 @media (max-width: 700px) {
     .signup-container {

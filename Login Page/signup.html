@@ -43,18 +43,24 @@
                 <h2>Join MathsLearn ✨</h2>
                 <p>Create your account below</p>
       
-                <form class="signup-form" onsubmit="return validateSignup()" method="get">
+                <form class="signup-form" action="../Account Page/Pages/account.html" onsubmit="return validateSignup()" method="get">
                     <label for="name">Full Name</label>
-                    <input type="text" id="name" name="name" placeholder="John Doe" />
+                    <input type="text" id="name" name="name" placeholder="Your name">
                   
                     <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="you@example.com" />
+                    <input type="email" id="email" name="email" placeholder="you@example.com">
                   
                     <label for="password">Password</label>
-                    <input type="password" id="password" name="password" required placeholder="Create a password" />
+                    <div class="password-wrapper">
+                        <input type="password" id="password" name="password" required placeholder="Create a password">
+                        <i class="fa-solid fa-eye toggle-password" id="password-eye"></i>
+                    </div>
                   
                     <label for="confirm-password">Confirm Password</label>
-                    <input type="password" id="confirm-password" name="confirm-password" required placeholder="Re-enter your password" />
+                    <div class="password-wrapper">
+                        <input type="password" id="confirm-password" name="confirm-password" required placeholder="Re-enter your password">
+                        <i class="fa-solid fa-eye toggle-password" id="confirm-password-eye"></i>
+                    </div>
                   
                     <button type="submit">Create Account</button>
                   
@@ -72,6 +78,7 @@
         <p>&copy; 2025 MathsLearn. All Rights Reserved to HAT.</p>
     </footer>
 
+    <script src="scripts/jquery.js"></script>
     <script src="scripts/signup.js""></script>
 </body>
 </html>
