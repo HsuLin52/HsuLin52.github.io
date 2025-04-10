@@ -290,6 +290,15 @@ header label {
 
 .progress-container {
     margin-top: 100px;
+    animation: fadeSlideIn 1.5s ease-in-out;
+}
+
+/* Progress Section Animation */
+@keyframes fadeSlideIn {
+    from {opacity: 0;
+        transform: translateY(-30px);}
+    to {opacity: 1;
+        transform: translateY(0);}
 }
 
 .section {
@@ -328,6 +337,7 @@ header label {
 }
 
 .stat-card {
+    color: #624a63;
     flex: 1;
     text-align: center;
     background: #fafafa;

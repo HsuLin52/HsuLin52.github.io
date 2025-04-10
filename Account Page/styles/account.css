@@ -310,6 +310,15 @@ header label {
     padding: 80px 20px;
     height: 100vh;
     flex: 1;
+    animation: fadeSlideIn 1.5s ease-in-out;
+}
+
+/* Account Section Animation */
+@keyframes fadeSlideIn {
+    from {opacity: 0;
+        transform: translateY(-30px);}
+    to {opacity: 1;
+        transform: translateY(0);}
 }
 
 /* Profile Section */
@@ -519,6 +528,7 @@ header label {
     background: linear-gradient(135deg, #624a63, #b4a1b5, #7a5d7c);
     color: #5b3d5e;
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
 }
 
 /* Footer */

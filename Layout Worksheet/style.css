@@ -167,7 +167,7 @@ header label {
     text-align: center; 
     margin: 20px auto; 
     font-size: 18px;
-    background-color: #788ee7; 
+    background-color: #624a63; 
     color: white;
     padding: 10px 15px;
     text-decoration: none;
@@ -179,11 +179,12 @@ header label {
 
 
 .Goback:hover {
-    background-color: #0556d7; 
+    background-color: #8b708d;
 }
 
 
 /* Filters Section */
+
 .filters {
     text-align: center;
     margin-bottom: 20px;
@@ -202,7 +203,6 @@ header label {
 
 .filters label {
     font-weight: bold;
-    
     margin-top: 12px;
 }
 
@@ -217,7 +217,7 @@ header label {
 }
 
 .filters select:focus {
-    border-color: #2a9df4;
+    border-color: #7a5d7c;
     outline: none;
 }
 .filter section{
@@ -231,6 +231,18 @@ header label {
     flex-wrap: wrap;
     gap: 20px;
     padding: 20px;
+}
+
+.worksheets, form, .Goback {
+    animation: fadeSlideIn 1.5s ease-in-out;
+}
+
+/* Worksheets Section Animation */
+@keyframes fadeSlideIn {
+    from {opacity: 0;
+        transform: translateY(-30px);}
+    to {opacity: 1;
+        transform: translateY(0);}
 }
 
 .worksheet-card {
@@ -276,12 +288,12 @@ button:hover {
 }
 
 .download {
-    background-color: #4caf50;
+    background-color: #624a63;
     color: white;
 }
 
 .download:hover {
-    background-color: #388e3c;
+    background-color: #7a5d7c;
 }
 
 /* .attempt {
@@ -293,9 +305,12 @@ button:hover {
     background-color: #e65100;
 } */
 .submit{
-    background-color: #2a9df4;
+    background-color: #624a63;
     color: white;
     
+}
+.submit:hover {
+    background-color: #7a5d7c;
 }
 
 @media only screen and (max-width: 767px) {

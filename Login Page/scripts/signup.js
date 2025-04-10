@@ -38,7 +38,7 @@ $(document).ready(function () {
     // Redirect after short delay (for user to see success message)
     setTimeout(function () {
       window.location.href = "../Account Page/Pages/account.html";
-    }, 1500);
+    }, 1000);
   });
 }); 
 
