@@ -1,4 +1,4 @@
-// ✅ Display logged-in user info
+// Display logged-in user info
 window.addEventListener("DOMContentLoaded", () => {
     const loggedInUser = JSON.parse(localStorage.getItem("loggedInUser"));
   
@@ -6,7 +6,7 @@ window.addEventListener("DOMContentLoaded", () => {
       document.querySelector(".profile h2").textContent = loggedInUser.name;
       document.querySelector(".profile p").textContent = "Email: " + loggedInUser.email;
   
-      // ✅ Also pre-fill the modal form fields
+      // Pre-fill the modal form fields
       document.getElementById("profileName").value = loggedInUser.name;
       document.getElementById("profileEmail").value = loggedInUser.email;
     } else {
@@ -28,7 +28,7 @@ document.getElementById("uploadImage").addEventListener("change", function (even
     }
 });
 
-// Load profile image from localStorage on page load ✅
+// Load profile image from localStorage on page load 
 window.addEventListener("DOMContentLoaded", () => {
     const savedImage = localStorage.getItem("profileImage");
     if (savedImage) {
@@ -36,7 +36,7 @@ window.addEventListener("DOMContentLoaded", () => {
     }
 });
 
-// Load profile name and email from localStorage ✅
+// Load profile name and email from localStorage 
 window.addEventListener("DOMContentLoaded", () => {
     const savedName = localStorage.getItem("profileName");
     const savedEmail = localStorage.getItem("profileEmail");
@@ -68,7 +68,7 @@ function saveProfile() {
         saveMessage.style.color = "red";
         saveMessage.textContent = "Please fill in all fields.";
     } else {
-        // Save to localStorage ✅
+        // Save to localStorage 
         localStorage.setItem("profileName", name);
         localStorage.setItem("profileEmail", email);
         localStorage.setItem("profileMessage", message);
@@ -76,15 +76,24 @@ function saveProfile() {
         saveMessage.style.color = "#7a5d7c";
         saveMessage.textContent = "Profile updated successfully!";
 
-        // Update display immediately ✅
+        // Update display immediately 
         document.querySelector(".profile h2").textContent = name;
         document.querySelector("#Email").textContent = "Email: " + email;
         document.querySelector("#Message").textContent = message;
 
-        // Close the modal after short delay ✅
+        // Close the modal after short delay 
         setTimeout(() => {
             document.getElementById("edit-mode").checked = false;
             saveMessage.textContent = "";
         }, 1500);
     }
+}
+
+function logout() {
+    localStorage.removeItem("loggedInUser");
+    // Or, to clear everything (optional):
+    // localStorage.clear();
+  
+    // Redirect to login page
+    window.location.href = "../../Login Page/login.html";
 }

@@ -31,7 +31,7 @@ $(document).ready(function () {
       return;
     }
 
-    // ✅ Store user in array
+    // Store user in array
     let users = JSON.parse(localStorage.getItem("users")) || [];
 
     // Check if email already exists

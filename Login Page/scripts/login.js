@@ -26,7 +26,7 @@ $(document).ready(function () {
     if (matchedUser) {
       message.css("color", "#7a5d7c").text("Login successful!");
 
-      // ✅ Save the logged-in user
+      // Save the logged-in user
       localStorage.setItem("loggedInUser", JSON.stringify(matchedUser));
 
       setTimeout(function () {
