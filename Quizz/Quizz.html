@@ -8,9 +8,10 @@
     <meta name="author" content="Hsu Lin Latt Naing, Anastasia Krynytska, Tien Dung Pham">
     <title>MathsLearn | Quizzes</title>
     <link rel="icon" href="maths.png" type="image/png">
-    <link rel="stylesheet" href="normalize.css" type="text/css">
-    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="styles/normalize.css" type="text/css">
+    <link rel="stylesheet" href="styles/style.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="quizz.js" defer></script>
 </head>
 <body class = "main">
     
@@ -37,71 +38,68 @@
     </header>
 
     <main>
-
-        <div class="quizzes-container">
-        
+        <div class="content">
             <section class="grade-10">
+                
                 <div>
                     <h2>Algebra</h2>
                     <p>Grade: 10</p>
-                    <a href="document/Grade10/Algebra10.html">Solve</a>
+                    <a href="document/Grade10/Algebra10.html" class="solve-button">Solve</a>
                 </div>
-
                 <div>
                     <h2>Geometry</h2>
                     <p>Grade: 10</p>
-                    <a href="document/Grade10/Geometry10.html">Solve</a>
+                    <a href="document/Grade10/Geometry10.html" class="solve-button">Solve</a>
                 </div>
-
                 <div>
                     <h2>Calculus</h2>
                     <p>Grade: 10</p>
-                    <a href="document/Grade10/Calculus10.html">Solve</a>
+                    <a href="document/Grade10/Calculus10.html" class="solve-button">Solve</a>
                 </div>
             </section>
 
-            
             <section class="grade-11">
                 <div>
                     <h2>Algebra</h2>
-                    <p>Grade: 11 </p>
-                    <a href="document/Grade11/Algebra11.html">Solve</a>
+                    <p>Grade: 11</p>
+                    <a href="document/Grade11/Algebra11.html" class="solve-button">Solve</a>
                 </div>
-
                 <div>
                     <h2>Geometry</h2>
                     <p>Grade: 11</p>
-                    <a href="document/Grade11/Geometry11.html">Solve</a>
+                    <a href="document/Grade11/Geometry11.html" class="solve-button">Solve</a>
                 </div>
-
                 <div>
                     <h2>Calculus</h2>
                     <p>Grade: 11</p>
-                    <a href="document/Grade11/Calculus11.html">Solve</a>
+                    <a href="document/Grade11/Calculus11.html" class="solve-button">Solve</a>
                 </div>
             </section>
 
-            
             <section class="grade-12">
                 <div>
                     <h2>Algebra</h2>
                     <p>Grade: 12</p>
-                    <a href="document/Grade12/Algebra12.html">Solve</a>
+                    <a href="document/Grade12/Algebra12.html" class="solve-button">Solve</a>
                 </div>
-
                 <div>
                     <h2>Geometry</h2>
                     <p>Grade: 12</p>
-                    <a href="document/Grade12/Geometry12.html">Solve</a>
+                    <a href="document/Grade12/Geometry12.html" class="solve-button">Solve</a>
                 </div>
-
                 <div>
                     <h2>Calculus</h2>
                     <p>Grade: 12</p>
-                    <a href="document/Grade12/Calculus12.html">Solve</a>
+                    <a href="document/Grade12/Calculus12.html" class="solve-button">Solve</a>
                 </div>
             </section>
         </div>
+
+        <section class="leaderboard">
+            <h2>Leaderboard</h2>
+            <ol id="leaderboard-list">
+            </ol>
+        </section>
     </main>
     
     

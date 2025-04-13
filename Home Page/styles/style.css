@@ -112,7 +112,7 @@ header label {
 
 @media (max-width:898px) {
     header {
-        padding: 20px;
+        padding: 15px;
     }
 
     header label {
@@ -274,23 +274,29 @@ header label {
 
 
 /* Contact Section */
-.contact-section {background: #7a5d7c;
-                padding: 10px 0 30px;
-                color: white;
-                margin-bottom: 0;}
+.contact-section {
+    background: #7a5d7c;
+    padding: 10px 0 30px;
+    color: white;
+    margin-bottom: 0;
+}
 
-.contact-section input {width: 50%;
-                        padding: 15px;
-                        margin: 15px 5px;
-                        border-radius: 5px;
-                        border: 1px solid #ccc;}
+.contact-section input {
+    width: 50%;
+    padding: 15px;
+    margin: 15px 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
 
-.contact-section textarea {width: 70%;
-                        height: 60px;
-                        padding: 3px;
-                        margin: 10px 5px;
-                        border-radius: 5px;
-                        border: 1px solid #ccc;}
+.contact-section textarea {
+    width: 70%;
+    height: 60px;
+    padding: 3px;
+    margin: 10px 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
 
 .contact-section h2 {
     margin-top: 10px;
@@ -319,7 +325,7 @@ header label {
     display: flex;
     align-items: center;
     gap: 10px;
-    margin-left: 60px;
+    margin-left: 40px;
     margin-bottom: 10px;
 }
 
