@@ -1,3 +1,20 @@
+// ✅ Display logged-in user info
+window.addEventListener("DOMContentLoaded", () => {
+    const loggedInUser = JSON.parse(localStorage.getItem("loggedInUser"));
+  
+    if (loggedInUser) {
+      document.querySelector(".profile h2").textContent = loggedInUser.name;
+      document.querySelector(".profile p").textContent = "Email: " + loggedInUser.email;
+  
+      // ✅ Also pre-fill the modal form fields
+      document.getElementById("profileName").value = loggedInUser.name;
+      document.getElementById("profileEmail").value = loggedInUser.email;
+    } else {
+      // Optional: redirect to login page if no user logged in
+      window.location.href = "../../Login Page/login.html";
+    }
+});
+
 document.getElementById("uploadImage").addEventListener("change", function (event) {
     const image = event.target.files[0];
     if (image) {
