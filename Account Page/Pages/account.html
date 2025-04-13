@@ -56,12 +56,6 @@
             <p id="Email">Email: marklee@gmail.com</p>
             <p id="Message">Math enthusiast and quiz lover.</p>
 
-            <!-- Profile Completion Bar -->
-            <div class="profile-completion">
-                <div class="progress-bar-container">
-                    <div class="progress-bar" style="width: 70%;">70%</div>
-                </div>
-            </div>
             <!-- Edit Profile Modal Trigger -->
             <label for="edit-mode" class="edit-profile-button"><i class="fa-solid fa-pen"></i> Edit Profile</label>
 
@@ -76,9 +70,9 @@
                     <form>
                         <label for="uploadImage">Choose your profile picture</label>
                         <input type="file" id="uploadImage" accept="image/*">
-                        <input type="text" id="profileName" placeholder="Full Name" value="Mark Lee">
-                        <input type="email" id="profileEmail" placeholder="Email" value="marklee@gmail.com">
-                        <input type="text" id="profileMessage" placeholder="About Me" value="Math enthusiast and quiz lover.">
+                        <input type="text" id="profileName" placeholder="Full Name" value="Unknown">
+                        <input type="email" id="profileEmail" placeholder="Email" value="example@gmail.com">
+                        <input type="text" id="profileMessage" placeholder="About Me" value="No bio">
                         <button type="button" onclick="saveProfile()">Save Changes</button>
                         <p id="saveMessage" class="message"></p>
                     </form>

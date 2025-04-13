@@ -134,57 +134,6 @@ header label {
     display: none;
 }
 
-@media (max-width:898px) {
-    header {
-        padding: 15px;
-    }
-
-    header label {
-        display: initial;
-    }
-
-    nav {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        background: #624a63;
-        border-top: 1px solid rgba(0, 0, 0, 0.1);
-        display: none;
-    }
-
-    .nav-links {
-        text-align: right;
-    }
-
-    .navigation li {
-        width: 100%;
-    }
-
-    .user-profile {
-        position: relative;
-        width: 100%;
-    }
-
-    .user-profile li {
-        background: #674e68b9;
-    }
-
-    /* For further lists within the navigation bar */
-    .user-profile li ul {
-        width: 100%;
-        left: 0;
-    }
-
-    #menu-bar:checked ~ nav {
-        display: initial;
-    }
-
-    footer {
-        font-size: 14px;
-    }
-}
-
 /* Welcome Section Animation */
 @keyframes fadeSlideIn {
     from {opacity: 0;
@@ -276,11 +225,6 @@ header label {
     text-decoration: underline;
 }
 
-.message {
-    margin-top: 10px;
-    font-size: 0.9rem;
-}
-
 .password-wrapper {
     position: relative;
 }
@@ -297,6 +241,22 @@ header label {
     cursor: pointer;
     color: #aaa;
 }
+
+#message {
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    padding: 20px;
+    margin-top: auto;
+    text-align: center;
+}
+
+/* Responsive Design */
   
 @media (max-width: 700px) {
     .signup-container {
@@ -308,11 +268,53 @@ header label {
     }
 }
 
-/* Footer */
-footer {
-    background: #333;
-    color: white;
-    padding: 20px;
-    margin-top: auto;
-    text-align: center;
+@media (max-width:898px) {
+    header {
+        padding: 15px;
+    }
+
+    header label {
+        display: initial;
+    }
+
+    nav {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #624a63;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+        display: none;
+    }
+
+    .nav-links {
+        text-align: right;
+    }
+
+    .navigation li {
+        width: 100%;
+    }
+
+    .user-profile {
+        position: relative;
+        width: 100%;
+    }
+
+    .user-profile li {
+        background: #674e68b9;
+    }
+
+    /* For further lists within the navigation bar */
+    .user-profile li ul {
+        width: 100%;
+        left: 0;
+    }
+
+    #menu-bar:checked ~ nav {
+        display: initial;
+    }
+
+    footer {
+        font-size: 14px;
+    }
 }

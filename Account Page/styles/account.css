@@ -115,61 +115,6 @@ header label {
     display: none;
 }
 
-@media (max-width:898px) {
-    header {
-        padding: 15px;
-    }
-
-    header label {
-        display: initial;
-    }
-
-    nav {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        background: #624a63;
-        border-top: 1px solid rgba(0, 0, 0, 0.1);
-        display: none;
-    }
-
-    .nav-links {
-        text-align: right;
-    }
-
-    .navigation li {
-        width: 100%;
-    }
-
-    .user-profile {
-        position: relative;
-        width: 100%;
-    }
-
-    .user-profile li {
-        background: #674e68b9;
-    }
-
-    /* For further lists within the navigation bar */
-    .user-profile li ul {
-        width: 100%;
-        left: 0;
-    }
-
-    #menu-bar:checked ~ nav {
-        display: initial;
-    }
-
-    footer {
-        font-size: 14px;
-    }
-
-    #pf {
-        display: none;
-    }
-}
-
 /* Sidebar Navigation */
 .sidebar {
     position: fixed;
@@ -231,74 +176,6 @@ header label {
 
 .sidebar ul li a:hover {
     background: #3e2f3e;
-}
-
-@media (max-width: 750px) {
-
-    header {
-        z-index: 1000;
-    }
-
-    footer {
-        z-index: 1000;
-    }
-
-    .sidebar {
-        width: 70px;
-        align-items: flex-start;
-        padding-left: 5px;
-        overflow: hidden;
-        z-index: 900;
-    }
-
-    .sidebar h2 {
-        display: none;
-    }
-
-    .sidebar ul {
-        margin-top: 60px;
-    }
-
-    .sidebar ul li a {
-        font-size: 0;
-        justify-content: center;
-    }
-
-    .sidebar ul li a i {
-        font-size: 20px;
-        margin-right: 0;
-    }
-    .sidebar:hover {
-        width: 220px;
-    }
-
-    .sidebar:hover ul li a {
-        font-size: 16px;
-        justify-content: flex-start;
-    }
-
-    .sidebar:hover ul li a i {
-        margin-right: 10px;
-    }
-
-    .account-container {
-        margin-left: 30px;
-        font-size: 12px;
-        z-index: 950s;
-    }
-
-    .profile {
-        padding: 5px;
-    }
-
-    .profile-pic {
-        width: 50px;
-        height: auto;
-    }
-
-    .recent-activity {
-        margin-bottom: 20px;
-    }
 }
 
 /* User Account Layout */
@@ -440,30 +317,6 @@ header label {
     pointer-events: auto;
 }
 
-/* Profile Completion Bar */
-.profile-completion {
-    margin: 10px 0;
-}
-
-.progress-bar-container {
-    background: #ddd;
-    width: 100%;
-    height: 20px;
-    border-radius: 10px;
-    margin-top: 5px;
-    overflow: hidden;
-}
-
-.progress-bar {
-    height: 100%;
-    background: #7a5d7c;
-    color: white;
-    text-align: center;
-    line-height: 20px;
-    font-weight: bold;
-    transition: width 0.5s ease-in-out;
-}
-
 /* Recent Activity */
 .recent-activity {
     background: white;
@@ -539,4 +392,129 @@ footer {
     margin-top: auto;
     text-align: center;
     z-index: 1000;
+}
+
+/* Responsive Design */
+
+@media (max-width: 750px) {
+
+    header {
+        z-index: 1000;
+    }
+
+    footer {
+        z-index: 1000;
+    }
+
+    .sidebar {
+        width: 70px;
+        align-items: flex-start;
+        padding-left: 5px;
+        overflow: hidden;
+        z-index: 900;
+    }
+
+    .sidebar h2 {
+        display: none;
+    }
+
+    .sidebar ul {
+        margin-top: 60px;
+    }
+
+    .sidebar ul li a {
+        font-size: 0;
+        justify-content: center;
+    }
+
+    .sidebar ul li a i {
+        font-size: 20px;
+        margin-right: 0;
+    }
+    .sidebar:hover {
+        width: 220px;
+    }
+
+    .sidebar:hover ul li a {
+        font-size: 16px;
+        justify-content: flex-start;
+    }
+
+    .sidebar:hover ul li a i {
+        margin-right: 10px;
+    }
+
+    .account-container {
+        margin-left: 30px;
+        font-size: 12px;
+        z-index: 950s;
+    }
+
+    .profile {
+        padding: 5px;
+    }
+
+    .profile-pic {
+        width: 50px;
+        height: auto;
+    }
+
+    .recent-activity {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width:898px) {
+    header {
+        padding: 15px;
+    }
+
+    header label {
+        display: initial;
+    }
+
+    nav {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #624a63;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+        display: none;
+    }
+
+    .nav-links {
+        text-align: right;
+    }
+
+    .navigation li {
+        width: 100%;
+    }
+
+    .user-profile {
+        position: relative;
+        width: 100%;
+    }
+
+    .user-profile li {
+        background: #674e68b9;
+    }
+
+    /* For further lists within the navigation bar */
+    .user-profile li ul {
+        width: 100%;
+        left: 0;
+    }
+
+    #menu-bar:checked ~ nav {
+        display: initial;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+
+    #pf {
+        display: none;
+    }
 }
