@@ -88,13 +88,14 @@ function saveProfile() {
         localStorage.setItem("profileMessage", message);
 
         // Then displays success message
-        saveMessage.css("color", "#7a5d7c").text("Profile updated successfully!")
+        saveMessage.style.color = "#7a5d7c";
+        saveMessage.textContent = "Profile updated successfully!";
 
-        // Updating the user profile display with the changed data 
+        // Update displayed profile content immediately
         document.querySelector(".profile h2").textContent = name;
-        document.querySelector("#Email").textContent = "Email: " + email;
-        document.querySelector("#Message").textContent = message;
-
+        document.getElementById("Email").textContent = "Email: " + email;
+        document.getElementById("Message").textContent = message;
+        
         // Close the editing modal after 1 sec 
         setTimeout(() => {
             document.getElementById("edit-mode").checked = false;
