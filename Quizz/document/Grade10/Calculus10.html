@@ -289,7 +289,7 @@
         function checkAnswer(answer, questionId, correctAnswer) {
             if (answer && answer.value === correctAnswer) {
                 document.getElementById(questionId + "Result").innerText = "Correct!";
-                document.getElementById(questionId + "Result").style.color = "green";
+                document.getElementById(questionId + "Result").style.color = "white";
             } else {
                 document.getElementById(questionId + "Result").innerText = "Incorrect! Correct answer: " + correctAnswer;
                 document.getElementById(questionId + "Result").style.color = "red";
