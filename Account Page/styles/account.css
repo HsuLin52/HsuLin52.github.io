@@ -229,7 +229,7 @@ header label {
     opacity: 0.9;
 }
 
-/* Edit Profile Button */
+/* Edit Profile & View Progress Button */
 .edit-profile-button, .view-progress-button {
     background: #7a5d7c;
     color: white;

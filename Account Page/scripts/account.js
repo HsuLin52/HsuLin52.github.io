@@ -13,6 +13,7 @@ window.addEventListener("DOMContentLoaded", () => {
         // Pre-filling the profile editing modal with user info
         document.getElementById("profileName").value = loggedInUser.name;
         document.getElementById("profileEmail").value = loggedInUser.email;
+        
     } else { // If no user is logged in
 
         // Redirects to the login page
